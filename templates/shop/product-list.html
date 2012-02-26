@@ -1,0 +1,60 @@
+{% if products %}
+            <table class="goods-list">
+                <tbody>
+                    <tr>
+                        <th colspan="4">{{ group.title }}</th>
+                    </tr>
+                    <tr>
+                        <th class="name">Наименование</th>
+                        <!--<th class="img"></th>-->
+                        <th class="characteristic">Характеристика</th>
+                        <th class="price">Цена, руб.<br/>Загрузка</th>
+                        <!--<th class="count"></th>-->
+                        <th>Заказ<br/>(Загрузок)</th>
+                    </tr>
+                {% for product in products %}
+                    <tr class="{% cycle '' 'odd' %}">
+                        <td class="has-border">
+                            <a href="{% url product_link product.pk %}" class="product-link">{{product.title}}</a><br/>
+                            <div id="product-images-{{product.pk}}">
+                                <ul>
+                                    <li>
+                                        <a title="{{product.get_image.title}}" href="{{product.get_image.image.url_300x300}}">
+                                            <img src="{{product.get_image.image.url_95x95}}" title="{{product.get_image.title}}" alt="{{product.get_image.title}}">
+                                        </a>
+                                    </li>
+                                    {% for img in product.product_images.all %}{% if not forloop.first %}
+                                    <li class="hidden-images">
+                                        <a title="{{img.title}}" href="{{img.image.url_300x300}}">
+                                            <img src="{{img.image.url_95x95}}" title="{{img.title}}" alt="{{img.title}}">
+                                        </a>
+                                    </li>
+                                    {% endif %}{% endfor %}
+                                </ul>
+                                <script type="text/javascript">
+                                    $('#product-images-{{product.pk}} a').lightBox({containerResizeSpeed: 350});
+                                </script>
+                            </div>
+                        </td>
+                        <td class="has-border">{{product.property|safe}}</td>
+                        <td class="has-border">{{product.price}}/{{product.unit}}<br/>{{product.load}}</td>
+                        <!--<td class="has-border"></td>-->
+                        <td>
+                            <form id="order-form-{{product.pk}}" class="order-form">
+                                <input type="text" name="product_{{product.pk}}" id="product_{{product.pk}}" class="add_to_cart_num" value="0" />
+                                <label>
+                                    <button class="add_to_cart" product_id="{{product.pk}}" load="{{product.load}}" price="{{product.price}}">Заказать</button>
+                                </label>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                    <tr>
+                        <td colspan="3"></td>
+                        <td>
+                            <button id="recalculate-button">Заказать</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+{% endif %}

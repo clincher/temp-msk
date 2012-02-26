@@ -1,0 +1,74 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+{% left_menu %}
+{% endblock %}
+{% block content %}
+    <h1>Заявка</h1>
+    {#{% navigation product.productgroup %}#}
+    <div class="line"></div>
+    {% if messages %}
+    <div id="messages">
+        {% for message in messages %}
+        <p class="message message-{{message.tags}}">{{message}}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="catalog">
+    {% if products %}
+        <table class="goods-list">
+            <tbody><tr>
+                <th class="name" width="30%">Наименование</th>
+                <!--<th class="img"></th>-->
+                <!--<th class="characteristic">Характеристика</th>-->
+                <th class="price" width="30%">Цена, руб.<br/>Загрузка</th>
+                <!--<th class="count"></th>-->
+                <th width="30%">Заказ (Загрузок)<br/> Сумма.</th>
+            </tr>
+            {% for product in products %}
+            <tr class="{% cycle '' 'odd' %}">
+                <td class="has-border">
+                    <a href="{% url product_link product.pk %}" class="product-link">{{product.title}}</a><br/>
+                    <img src="{{product.get_image.image.url_95x95}}" title="{{product.get_image.title}}" alt="{{product.get_image.title}}">
+                </td>
+                <!--<td class="has-border">{{product.property|safe}}</td>-->
+                <td class="has-border">{{product.price}}/{{product.unit}}<br/>{{product.load}}</td>
+                <!--<td class="has-border"></td>-->
+                <td>
+                    <input type="text" name="product_{{product.pk}}" id="product_{{product.pk}}" class="add_to_cart_num" value="0" />
+                    <label>
+                        <input type="image" id="add_to_cart_{{product.pk}}" class="add_to_cart" src="/media_admin/img/admin/icon_changelink.gif" product_id="{{product.pk}}" load="{{product.load}}" price="{{product.price}}" />
+                    </label>
+                    <label>
+                        <input type="image" src="/media_admin/img/admin/icon_deletelink.gif" class="delete_from_cart" product_id="{{product.pk}}" />
+                    </label><br>
+                    <div class="order-item-summ">
+                        Сумма: <span id="order-summ-{{product.pk}}">0</span>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="2">Сумма заявки: <span id="order_total">0</span></td>
+                <td>
+                    <button id="recalculate-button">Пересчитать</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div> <!-- catalog -->
+    <div class="clr"></div>
+    <div class="line"></div>
+    <div id="div-order-form">
+        <form id="order-form" method="post" action="{% url order_link %}">{% csrf_token %}
+            {{form.as_p}}
+        </form>
+        <button id="send-order-button">Отправить заявку</button>
+    </div>
+{{ p.content|safe }}
+    {% else %}
+        {% if not messages %}
+        Ваша заявка пуста
+        {% endif %}
+    {% endif %}
+
+{% endblock %}

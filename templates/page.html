@@ -1,0 +1,14 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+{% left_menu %}
+{% endblock %}
+{% block content %}
+<h1>{{p.title|safe}}</h1>
+<ul class="breadcrumbs">
+    <li><a title="Главная" href="/">Главная</a></li>
+    <li>/</li>
+    <li>{{p|safe}}</li>
+</ul>
+<div class="line"></div>
+{{p.content|safe}}
+{% endblock %}

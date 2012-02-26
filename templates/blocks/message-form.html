@@ -1,0 +1,10 @@
+{% if messages %}
+<div id="messages">
+    {% for message in messages %}
+    <p class="message message-{{message.tags}} ui-corner-all">{{message}}</p>
+    {% endfor %}
+</div>
+{% endif %}
+<form method="post" id="message-form" action="{% url message %}">{% csrf_token %}
+    {{form.as_p}}
+</form>

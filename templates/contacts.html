@@ -1,0 +1,107 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+{% left_menu %}
+{% endblock %}
+{% block content %}
+<script src="http://maps.google.com/maps?file=api&v=2&key={{MAPS_API_KEY}}" type="text/javascript"></script>
+<script type="text/javascript">
+    <!--
+
+    var castleCenter, map, directions, castleMarker, castleIcon, autoMarker;
+
+    $(document).ready(function(){
+        if (GBrowserIsCompatible()) {
+
+            map = new GMap2(document.getElementById("map_canvas"));
+
+//            castleIcon = new GIcon(G_DEFAULT_ICON);
+//            castleIcon.image = "/media/images/logo_map.png";
+//            castleIcon.iconSize = new GSize(33, 44);
+//            castleIcon.shadowSize = new GSize(33, 33);
+//            castleIcon.iconAnchor = new GPoint(33, 33);
+
+//Адрес нашего центра
+            castleCenter = new GLatLng(56.034989, 35.960779);
+            castleMarker = new GMarker(castleCenter);
+            map.setCenter(castleCenter, 16);
+            map.setUIToDefault();
+
+            map.addOverlay(castleMarker);
+
+            GEvent.addListener(castleMarker, "click", function() {
+                castleMarker.openInfoWindowHtml("<b>Мы здесь)))</b><br>г. Волоколамск");
+            });
+
+
+            GEvent.addListener (map, "dblclick",
+                    function(overlay, point) {
+                        testDrive(point);
+                    }
+            );
+
+            autoIcon = new GIcon(G_DEFAULT_ICON);
+            autoIcon.image = "/media/images/auto.png";
+            autoIcon.iconSize = new GSize(40, 46);
+            autoIcon.shadowSize = new GSize(32, 32);
+            autoIcon.iconAnchor = new GPoint(10, 10);
+
+            autoMarker = new GMarker(new GLatLng(56.033674, 35.965912), {icon: autoIcon, draggable: true});
+            GEvent.addListener(autoMarker, "dragstart", function() {
+                map.closeInfoWindow();
+            });
+            GEvent.addListener(autoMarker, "click", function() {
+                $emtDialog.html("Для прокладки автомобильного маршрута до языкового центра Кастл передвиньте автомобиль в точку, из которой Вы планируете поездку или произведите двойной клик на эту точку.");
+                $emtDialog.dialog({
+                    width: 500,
+                    height: 300,
+                    buttons:{
+                        'Закрыть': function(){
+                            $(this).dialog('close')
+                        }
+                    }
+                });
+                $emtDialog.dialog('open');
+            });
+
+            GEvent.addListener(autoMarker, "dragend", function(point) {
+                testDrive(point, castleCenter);
+            });
+            map.addOverlay(autoMarker);
+
+        }
+    });
+
+
+    function testDrive(startPoint) {
+
+        var directionsPanel = document.getElementById("infoDrive");
+
+        if (directions)
+            directions.clear();
+        directions = new GDirections(map, directionsPanel);
+        GEvent.addListener(directions, "load", function(){
+            if (directions!==undefined)
+                autoMarker.setLatLng(directions.getMarker(0).getLatLng());
+        });
+
+        var point1 = "@"+startPoint.lat()+","+startPoint.lng();
+        var point2 = "г. Волоколамск, Языковой центр Castle@"+castleCenter.lat()+", "+castleCenter.lng();
+        directions.loadFromWaypoints(([point1, point2]) ,{locale: "ru"})
+    }
+
+
+
+    //-->
+</script>
+<!-- center close -->
+<h1>{{p.title|safe}}</h1>
+<ul class="breadcrumbs">
+    <li><a title="Главная" href="/">Главная</a></li>
+    <li>/</li>
+    <li>{{p|safe}}</li>
+</ul>
+<div class="line"></div>
+{{p.content|safe}}
+<div id="map_canvas" style="width: 605px; height: 450px;"></div>
+<div id="infoDrive" style="width: 605px;"></div>
+{% endblock %}

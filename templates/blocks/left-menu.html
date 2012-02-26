@@ -1,0 +1,15 @@
+<div class="clr"></div>
+<ul class="aside-catalog">
+    {% for group in groups %}
+    <li>
+        <a href="{% url price_list group.pk %}" id="menu-item-group-{{group.pk}}" class="{% if forloop.last %}last{%endif%}"><strong></strong><span>{{group.title}}</span><em>({{group.products_count}})</em></a>
+        {% if group.sub_groups.all %}
+        <ul id="menu-sub_groups-{{group.pk}}" class="{% if not group.head %}menu-sub_groups-list{% endif %}">
+            {% for sub_group in group.sub_groups.all %}
+            <li><a href="{% url price_list sub_group.pk %}" title="{{sub_group.title}}">{{sub_group.title}}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul> <!-- catalog -->

@@ -1,0 +1,18 @@
+{% load adminlist i18n %}
+{% parent_links parent ct %}
+{% for result in results %}
+    <li class="ui-state-default ui-corner-all" id="id_{{ result.id }}">
+        <a href="/admin/{{ct.app_label}}/{{ ct.model }}/{{ result.id }}/">{{ result }}</a>
+        {% if metaname %}{% link_to_children_links result metaname %}{% endif %}
+        <a class="deletelink dellink" href="/admin/{{ct.app_label}}/{{ ct.model }}/{{ result.id }}/delete/">Удалить</a>
+    </li>
+{% endfor %}
+<script type="text/javascript">
+    $(function(){
+        $("#sortable").sortable({
+            placeholder: 'ui-state-highlight',
+            sort: function(event, ui) {$("#saveInput").show('')}
+        });
+        $("#sortable").disableSelection();
+    });
+</script>

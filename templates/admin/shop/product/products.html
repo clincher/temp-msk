@@ -1,0 +1,16 @@
+{% load adminlist i18n %}
+{% for result in results %}
+    <li class="ui-state-default ui-corner-all" id="id_{{ result.id }}">
+        <a href="/admin/{{ct.app_label}}/{{ ct.model }}/{{ result.id }}/">{{ result }}</a>
+        <a class="deletelink dellink" href="/admin/{{ct.app_label}}/{{ ct.model }}/{{ result.id }}/delete/">Удалить</a>
+    </li>
+{% endfor %}
+<script type="text/javascript">
+    $(function(){
+        $("#sortable").sortable({
+            placeholder: 'ui-state-highlight',
+            sort: function(event, ui) {$("#saveInput").show('')}
+        });
+        $("#sortable").disableSelection();
+    });
+</script>

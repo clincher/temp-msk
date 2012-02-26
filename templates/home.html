@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">{% load menues %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{% if p.title %}{{p.title|safe}}{% else %}ООО &quot;Темп&quot;{% endif %}</title>
+    <meta name="description" content="{% if p.meta_description %}{{ p.meta_description|striptags }}.{% else %}ООО &quot;Темп&quot;{% if p.title %} - {{ p.title }}{% endif %}{% endif %}">
+    <meta name="keywords" content="{% if p.meta_keywords %}{{ p.meta_keywords }}{% else %}{{ p.title }}, {{ p.title|lower }}{% endif %}">
+
+    <link rel="stylesheet" type="text/css" href="/media/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/nf.lightbox.css" />
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/media/css/ie7.css" /><![endif]-->
+    <script type="text/javascript" src="/media/js/jquery.js"></script>
+    <script type="text/javascript" src="/media/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/media/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/media/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/media/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/media/js/NFLightBox.js"></script>
+    <script type="text/javascript" src="/media/js/script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+    <a class="logo" href="index.html" title="Главная страница"></a>
+    <div class="info">
+        <h2>+7 (495) 968-29-18</h2>
+        <a class="question" id="message-button" href="javascript:void(0)" >Есть вопрос? Напишите нам!</a>
+        <ul>
+            <li class="mail"><a href="javascript:void(0)" title=""></a></li>
+            <li class="twitter"><a href="javascript:void(0)" title=""></a></li>
+            <li class="icq">267589741</li>
+        </ul>
+
+    </div> <!-- info -->
+</div> <!-- header -->
+<div id="content">
+    <div class="aside">
+        <div class="nav-outer">
+            {% leftmenulinks %}
+        </div> <!-- nav-outer-->
+
+        <div class="search">
+            <span>поиск по сайту</span>
+            <form action="{% url search %}" method="get">
+                <p class="txt">
+                    <input type="text" name="query" />
+                </p>
+                <input class="btn" type="submit" value="" />
+            </form>
+        </div> <!-- search -->
+        {% block left_menu %}
+        {% left_menu %}
+        {% endblock %}
+        {% news_block %} <!-- news -->
+        {% comment %}
+        <div class="subscribe">
+            <h2>подписаться на новости</h2>
+            <form action="#" method="get">
+
+                <p class="txt">
+                    <input type="text" value="Ваш e-mail" />
+                </p>
+                <input class="btn" type="submit" value="" />
+            </form>
+            <a href="javascript:void(0)" title="">отменить подписку</a>
+        </div> <!-- subscribe -->
+        {% endcomment %}
+    </div> <!-- aside -->
+    <div class="content-inner">
+        <div class="main-banner"></div>
+    {% block content %}
+        <h1><span>оптовые поставки</span>строительных материалов</h1>
+        <p class="small">{{p.content|safe}}</p>
+        <div class="line"></div>
+        <div class="catalog">
+            {% for group in groups %}
+            <div>
+                <a href="{% url price_list group.pk %}" title="{{group.title}}">
+                    <img src="{{group.get_image_url}}" alt="{{group.title}}"><br/>
+                    {{group.title}}<em>({{group.products_count}})</em></a>
+                <ul>
+                {% for sub_group in group.sub_groups.all %}
+                    <li><a href="{% url price_list sub_group.pk %}" title="{{sub_group.title}}">{{sub_group.title}}</a>{% if not forloop.last%},{% endif %}</li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% cycle '' '' '<p class="clr"></p>' %}
+            {% endfor %}
+        </div> <!-- catalog -->
+    {% endblock %}
+    </div> <!-- content-inner -->
+</div> <!-- content -->
+<div id="footer">
+    <a class="f-logo" href="/" title="Главная"></a>
+    {% footmenulinks %}
+    <div class="clr"></div>
+    <p>Copyright © ООО "Темп", 2012. <span>Все права защищены.</span></p>
+</div> <!-- footer -->
+</div> <!-- wrapper -->
+<div id="dialog"></div>
+<div class="ui-widget-overlay" id="overlay">
+    <img src="/media/images/ajax-loader.gif">
+</div>
+</body>
+</html>

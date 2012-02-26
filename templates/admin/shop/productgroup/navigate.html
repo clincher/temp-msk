@@ -1,0 +1,10 @@
+{% load adminlist %}
+{% parent_links parent ct %}
+{% for result in results %}
+    <li class="ui-state-default ui-corner-all" id="id_{{ result.id }}">
+        <a href="/admin/shop/productgroups_navigate/{{ result.id }}/" class="groups_navigate">{{ result }}</a>
+    </li>
+{% endfor %}
+<script type="text/javascript">
+    get_products('{{ current_id }}');
+</script>

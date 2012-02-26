@@ -1,0 +1,12 @@
+<div class="news">
+    <h2>Новости компании</h2>
+    <ul>
+        {% for news in newses %}
+        <li>
+            <span>{{news.date|date:"d.m.Y"}}</span>
+            <a href="{{ news.get_url }}" class="news-title">{{ news.title }}</a>
+            <a href="{{ news.get_url }}" title="{{ news.title }}">{{ news.smallcontent|safe }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

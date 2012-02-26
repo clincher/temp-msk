@@ -1,0 +1,21 @@
+Новый заказ на сайте
+
+ID заказа - {{order.pk}}
+
+Заказчик - {{order.company}}
+Контактное лицо {{order.name}}
+Контактная информация:
+    телефон - {{order.phone}}
+    эл. почта - {{order.email}}
+
+Заказ:
+{% for product in products %}
+{{product.product.title|safe}}  {{product.count}} {{product.product.unit|safe}} на сумму {{product.summ}}  руб.
+{% endfor %}
+
+на общую сумму {{total}} руб.
+
+{% if order.description %}
+Примечание:
+{{order.description|safe}}
+{% endif %}

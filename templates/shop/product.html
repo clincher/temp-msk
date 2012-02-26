@@ -1,0 +1,49 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+    {% left_menu product.productgroup %}
+{% endblock %}
+{% block content %}
+        <h1>{{product.title|safe}}</h1>
+        {% navigation product.productgroup %}
+        <div class="line"></div>
+        <div id="cart_link"><a href="{% url order_link %}">Заявка</a></div>
+        <div class="catalog">
+            <table class="goods-list">
+                <tbody><tr>
+                    <!--<th class="name" colspan="2">Наименование</th>-->
+                    <!--<th class="img"></th>-->
+                    <th class="characteristic">Характеристика</th>
+                    <th class="price">Цена, руб.</th>
+                    <th class="count">Загрузка</th>
+                    <th>Заказ</th>
+                </tr>
+                <tr class="odd">
+                    <!--<td><a href="{% url product_link product.pk %}" class="product-link">{{product.title}}</a></td>-->
+                    <!--<td class="has-border">-->
+                        <!--{#<img src="{{product.get_image.image.url_95x95}}" title="{{product.get_image.title}}" alt="{{product.get_image.title}}">#}-->
+                    <!--</td>-->
+                    <td class="has-border">{{product.property|safe}}</td>
+                    <td class="has-border">{{product.price}}/{{product.unit}}</td>
+                    <td class="has-border">{{product.load}} {{product.unit}}</td>
+                    <td>
+                        <form id="order-form-{{product.pk}}" class="order-form">
+                            <input type="text" name="product_{{product.pk}}" id="product_{{product.pk}}" class="add_to_cart_num" value="0" />
+                            <label>
+                                <button class="add_to_cart" product_id="{{product.pk}}" load="{{product.load}}" price="{{product.price}}">Заказать</button>
+                            </label>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div> <!-- catalog -->
+        <p class="small">{{product.description|safe}}</p>
+        {% if product_images %}
+        <div id="product-gallery" class="gallery">
+            <ul>
+            {% for photo in product_images %}
+                <li><a title="{{photo.title}}" href="{{photo.image.url_300x300}}"><img src="{{photo.image.url_150x150}}" alt="хуйня"></a></li>
+            {% endfor %}
+            </ul>
+        </div>{% endif %}
+{% endblock %}

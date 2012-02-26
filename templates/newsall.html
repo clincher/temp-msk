@@ -1,0 +1,46 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+{% left_menu %}
+{% endblock %}
+{% block content %}
+<h1>{{p.title|safe}}</h1>
+<ul class="breadcrumbs">
+    <li><a title="Главная" href="/">Главная</a></li>
+    <li>/</li>
+    <li>Новости</li>
+</ul>
+<div class="line"></div>
+<p></p>
+<div class="allnews">
+{% for news in newspage.object_list %}
+    <div class="news-item">
+        <span class="date">{{news.date|date:"d.m.Y"}}</span>
+        <a href="{{ news.get_url }}">{{news.smallcontent|striptags}}</a>
+        <a href="{{ news.get_url }}" class="more">Подробнее</a>
+    </div>
+{% endfor %}
+</div>
+<div class="pagination">
+    <span class="step-links">
+        <span class="current">
+            Страница:
+        </span>
+
+        {% if newspage.has_previous %}
+            <a href="{% url news_page newspage.previous_page_number %}">предыдущая</a>
+        {% endif %}
+
+        {% for page in newspage.paginator.page_range %}
+            {% ifequal newspage.number page %}
+            <span class="current">{{ page }}</span>
+            {% else %}
+            <a href="{% url news_page page %}">{{ page }}</a>
+            {% endifequal %}
+        {% endfor %}
+
+        {% if newspage.has_next %}
+            <a href="{% url news_page newspage.next_page_number %}">cледующая</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}

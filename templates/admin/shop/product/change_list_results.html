@@ -1,0 +1,91 @@
+	<link type="text/css" href="/media/css/jquery-ui.css" rel="stylesheet" />
+	<style type="text/css">
+		#sortable { list-style-type: none !important; margin: 0; padding: 0; width: 40%; }
+		#sortable li {list-style-type:none; margin: 5px; padding: 5px; font-size: 1.2em; height: 1.5em; height: 1.5em; line-height: 1.2em;}
+
+        #groups { list-style-type: none !important; margin: 0; padding: 0; width: 30%; }
+        #groups li {list-style-type:none; margin: 2px; padding: 2px; font-size: 1.2em; height: 1.3em; background-color: #999999 !important;}
+        #groups li a { color: #990000; }
+
+
+		.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+		.dellink {float: right;}
+		#saveButton {margin-left: 5px;}
+		#msg {margin-left: 5px;}
+        .link_to_children_links {cursor: pointer; margin-left: 20px; font-size: 8pt;}
+	</style>
+	<script type="text/javascript">
+	function update() {
+		$("#msg").html('');
+		$.post('/admin/shop/product/',
+            {
+                _selected_action: 0,
+                action: 'savesort',
+                index: 0,
+                array_string: $("#sortable").sortable('serialize', {key: 'page_id'}),
+                type: '{{ ct.model }}',
+                csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val()
+            },
+            function(data){
+                $("#msg").html(data);
+                $("#saveInput").hide();
+            }
+		);
+
+	}
+
+    function get_sub_elements(id) {
+        make_get_sub_elements('/admin/shop/productgroups_navigate/'+id);
+    }
+
+
+    function make_get_sub_elements(url) {
+        $("#msg").html('');
+
+        $.ajax({
+            url: url,
+            success: function(data){
+                $("#groups").html(data);
+            }
+        });
+    }
+
+
+    function get_products(id){
+        $.ajax({
+            url: '/admin/shop/products/'+id,
+            success: function(data){
+                $("#sortable").html(data);
+            }
+        });
+    }
+
+    $(document).ready(function(){
+        $("#saveButton").button().live({
+            click: update
+        });
+
+        $(".groups_navigate").live({
+            click: function(){
+                make_get_sub_elements($(this).attr("href"))
+                return false;
+            }
+        })
+
+        $("#saveInput").hide();
+        get_sub_elements("");
+    });
+
+	</script>
+
+<ul id="groups"></ul>
+
+<div>
+    <ul id="sortable"></ul>
+</div>
+<br>
+{% csrf_token %}
+<div id="saveInput">
+    <input type="button" value="Сохранить" id="saveButton">
+</div>
+<div id="msg"></div>

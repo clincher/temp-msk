@@ -1,0 +1,10 @@
+        <ul class="breadcrumbs">
+            <li><a title="Главная" href="/">Главная</a></li>
+            <li>/</li>
+            {% for group in groups %}
+            <li><a title="{{group.title}}" href="{% url price_list group.pk %}">{{group.title}}</a></li>
+            {% if not forloop.last %}
+            <li>/</li>
+            {% endif %}
+            {% endfor %}
+        </ul>

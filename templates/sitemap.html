@@ -1,0 +1,25 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+{% left_menu %}
+{% endblock %}
+{% block content %}
+<h1>{{p.title|safe}}</h1>
+<ul class="breadcrumbs">
+    <li><a title="Главная" href="/">Главная</a></li>
+    <li>/</li>
+    <li>{{p|safe}}</li>
+</ul>
+<div class="line"></div>
+{{p.content|safe}}
+<div class="line"></div>
+<ul class="sitemap">
+    {% for page in pages %}
+    <li>
+        <a href="{% url page_link page.url %}">{{page|safe}}</a>
+        {% ifequal page.url 'products' %}{% sub_groups groups %}{% endifequal %}
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

@@ -1,0 +1,2340 @@
+[
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "message", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "productgroup", 
+            "name": "\u0413\u0440\u0443\u043f\u043f\u0430 \u0442\u043e\u0432\u0430\u0440\u043e\u0432", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "unit", 
+            "name": "\u0415\u0434\u0438\u043d\u0438\u0446\u0430 \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u044f \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "order", 
+            "name": "\u0417\u0430\u043a\u0430\u0437", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "ordercount", 
+            "name": "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "filemanager", 
+            "name": "\u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u0444\u0430\u0439\u043b\u043e\u0432", 
+            "app_label": "filemanager"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "news", 
+            "name": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c", 
+            "app_label": "page"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "productimage", 
+            "name": "\u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", 
+            "app_label": "page"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "link", 
+            "name": "\u0421\u0441\u044b\u043b\u043a\u0430", 
+            "app_label": "page"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "footmenulink", 
+            "name": "\u0421\u0441\u044b\u043b\u043a\u0430 \u0432\u043d\u0438\u0437\u0443", 
+            "app_label": "page"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "leftmenulink", 
+            "name": "\u0421\u0441\u044b\u043b\u043a\u0430 \u0441\u043b\u0435\u0432\u0430", 
+            "app_label": "page"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "page", 
+            "name": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430", 
+            "app_label": "page"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "product", 
+            "name": "\u0422\u043e\u0432\u0430\u0440", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": "d6a25c6415ba8cf93b6cf2dbde2cc5f3", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-20 14:55:08", 
+            "session_data": "ODcxNzNkZGU3Yjk2MjhhOTc4YjMzZGI4OTE4OWQ5NWVlMzA5ZWJjNTqAAn1xAShVC3VwbG9hZF9w\nYXRocQJYDwAAAC9tZWRpYS91cGxvYWRzL3EDVRJfYXV0aF91c2VyX2JhY2tlbmRxBFUpZGphbmdv\nLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmRxBVUNX2F1dGhfdXNlcl9pZHEGigEB\ndS4=\n"
+        }
+    }, 
+    {
+        "pk": "922874562c7b761e3416f5841843a76a", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-21 12:06:51", 
+            "session_data": "OTk0NmFiMTVlZjFhZTk5NGNmYWY3Yzc1N2ZmNzQ0OTU0Y2NiN2E2ZTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+        }
+    }, 
+    {
+        "pk": "c214aaa6f74089eae180d9f1e7a00e85", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-03-09 16:36:06", 
+            "session_data": "OTk0NmFiMTVlZjFhZTk5NGNmYWY3Yzc1N2ZmNzQ0OTU0Y2NiN2E2ZTqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQSKAQF1Lg==\n"
+        }
+    }, 
+    {
+        "pk": "04252422bd0359f3562633863fe5f561", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2012-02-28 12:00:22", 
+            "session_data": "OGUzMzBlZDk4MWIzN2RjZTg3ZTAzMjA1NDRlNDY2ZDcwOWNiMzIzOTqAAn1xAShVC3VwbG9hZF9w\nYXRocQJYDwAAAC9tZWRpYS91cGxvYWRzL3EDVQ1fYXV0aF91c2VyX2lkcQSKAQFVEl9hdXRoX3Vz\nZXJfYmFja2VuZHEFVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHEG\ndS4=\n"
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-24 16:36:05", 
+            "object_repr": "\u041f\u043e\u0438\u0441\u043a \u043f\u043e \u0441\u0430\u0439\u0442\u0443", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-24 16:21:38", 
+            "object_repr": "\u041a\u0430\u0440\u0442\u0430 \u0441\u0430\u0439\u0442\u0430", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-24 16:20:52", 
+            "object_repr": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "object_id": "3", 
+            "change_message": "\u041d\u0438 \u043e\u0434\u043d\u043e \u043f\u043e\u043b\u0435 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043e.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-23 15:45:01", 
+            "object_repr": "\u0417\u0430\u043a\u0430\u0437", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-23 13:07:43", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447", 
+            "object_id": "4", 
+            "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d description \u0438 meta_description.", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-23 13:07:23", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-17 13:20:30", 
+            "object_repr": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c1", 
+            "object_id": "1", 
+            "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d url.", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2012-02-17 12:02:33", 
+            "object_repr": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 12:01:40", 
+            "object_repr": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 12:00:34", 
+            "object_repr": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 12:00:27", 
+            "object_repr": "\u0420\u0435\u043a\u0432\u0438\u0437\u0438\u0442\u044b", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 12:00:20", 
+            "object_repr": "\u041a\u0430\u043a \u043a\u0443\u043f\u0438\u0442\u044c?", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-17 12:00:10", 
+            "object_repr": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b", 
+            "object_id": "7", 
+            "change_message": "\u041d\u0438 \u043e\u0434\u043d\u043e \u043f\u043e\u043b\u0435 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043e.", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 12:00:02", 
+            "object_repr": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 11:50:48", 
+            "object_repr": "\u041a\u0430\u043a \u043a\u0443\u043f\u0438\u0442\u044c?", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 11:50:30", 
+            "object_repr": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 11:50:21", 
+            "object_repr": "\u0420\u0435\u043a\u0432\u0438\u0437\u0438\u0442\u044b", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 11:49:48", 
+            "object_repr": "\u0420\u0435\u043a\u0432\u0438\u0437\u0438\u0442\u044b", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 11:48:18", 
+            "object_repr": "\u041a\u0430\u043a \u043a\u0443\u043f\u0438\u0442\u044c?", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 10:58:41", 
+            "object_repr": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 10:58:34", 
+            "object_repr": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 10:58:29", 
+            "object_repr": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-17 10:46:15", 
+            "object_repr": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "object_id": "3", 
+            "change_message": "\u041d\u0438 \u043e\u0434\u043d\u043e \u043f\u043e\u043b\u0435 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043e.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-17 10:43:10", 
+            "object_repr": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-14 11:59:13", 
+            "object_repr": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-14 11:57:15", 
+            "object_repr": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f", 
+            "object_id": "1", 
+            "change_message": "\u041d\u0438 \u043e\u0434\u043d\u043e \u043f\u043e\u043b\u0435 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043e.", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 23:52:54", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439", 
+            "object_id": "1", 
+            "change_message": "\u0423\u0434\u0430\u043b\u0435\u043d \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u041a\u0438\u0440\u043f\u0438\u0447 \u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u043b\u0438\u0446\u0435\u0432\u043e\u0439\". \u0423\u0434\u0430\u043b\u0435\u043d \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u0415\u0449\u0435 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430\".", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-09 23:49:49", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \"\u0441\u043e\u043b\u043e\u043c\u0430\" ", 
+            "object_id": "2", 
+            "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d load.", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-08 00:54:22", 
+            "object_repr": "\u0415\u0449\u0435 \u043e\u0434\u0438\u043d \u0432\u0438\u0434 \u043a\u0438\u0440\u043f\u0438\u0447\u0430", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-07 15:29:29", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \"\u043f\u0435\u0440\u0441\u0438\u043a\"", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-07 15:27:31", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \"\u0441\u043e\u043b\u043e\u043c\u0430\" ", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-07 15:24:43", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439", 
+            "object_id": "1", 
+            "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d\u044b image \u0434\u043b\u044f \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u041a\u0438\u0440\u043f\u0438\u0447 \u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u043b\u0438\u0446\u0435\u0432\u043e\u0439\". \u0418\u0437\u043c\u0435\u043d\u0435\u043d\u044b image \u0434\u043b\u044f \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u0415\u0449\u0435 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430\".", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-07 15:22:03", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439", 
+            "object_id": "1", 
+            "change_message": "\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u041a\u0438\u0440\u043f\u0438\u0447 \u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u043b\u0438\u0446\u0435\u0432\u043e\u0439\". \u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u0415\u0449\u0435 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430\".", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-07 15:21:03", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439", 
+            "object_id": "1", 
+            "change_message": "\u0423\u0434\u0430\u043b\u0435\u043d \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u041a\u0438\u0440\u043f\u0438\u0447 \u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u043b\u0438\u0446\u0435\u0432\u043e\u0439\". \u0423\u0434\u0430\u043b\u0435\u043d \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442 \"\u0415\u0449\u0435 \u043a\u0430\u0440\u0442\u0438\u043d\u043a\u0430\".", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-07 15:09:22", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-07 15:05:00", 
+            "object_repr": "\u0448\u0442", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-07 12:49:23", 
+            "object_repr": "\u0442\u043e\u043d\u043d\u0430", 
+            "object_id": "1", 
+            "change_message": "\u041d\u0438 \u043e\u0434\u043d\u043e \u043f\u043e\u043b\u0435 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043e.", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-07 12:49:19", 
+            "object_repr": "\u0442\u043e\u043d\u043d\u0430", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 18:23:34", 
+            "object_repr": "\u0413\u043b\u0430\u0434\u043a\u043e\u0433\u043e \u043f\u0440\u043e\u0444\u0438\u043b\u044f", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 18:15:48", 
+            "object_repr": "\u041b\u0438\u0446\u0435\u0432\u043e\u0439", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 18:10:53", 
+            "object_repr": "\u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 17:27:06", 
+            "object_repr": "\u0416\u0411\u0418", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-06 17:22:39", 
+            "object_repr": "\u0426\u0435\u043c\u0435\u043d\u0442 \u0441\u043c\u0435\u0441\u0438", 
+            "object_id": "3", 
+            "change_message": "\u041d\u0438 \u043e\u0434\u043d\u043e \u043f\u043e\u043b\u0435 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043e.", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 17:22:19", 
+            "object_repr": "\u0426\u0435\u043c\u0435\u043d\u0442 \u0441\u043c\u0435\u0441\u0438", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 17:20:47", 
+            "object_repr": "\u0410\u0440\u043c\u0430\u0442\u0443\u0440\u0430", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 16:09:09", 
+            "object_repr": "Morbi eget metus dolor. Cras id venenatis tortor. ", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 16:07:34", 
+            "object_repr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 16:05:58", 
+            "object_repr": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c3", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 16:03:00", 
+            "object_repr": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c2", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 16:01:39", 
+            "object_repr": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c1", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 15:31:23", 
+            "object_repr": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2012-02-06 15:07:33", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447\u0438", 
+            "object_id": "1", 
+            "change_message": "\u041d\u0438 \u043e\u0434\u043d\u043e \u043f\u043e\u043b\u0435 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u043e.", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2012-02-06 15:02:19", 
+            "object_repr": "\u041a\u0438\u0440\u043f\u0438\u0447\u0438", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f", 
+            "meta_description": "\u041e\u043f\u0442\u043e\u0440\u0432\u044b\u0435 \u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0438 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u043e\u0432", 
+            "title": "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435 \u0434\u0435\u0442\u0438\u0448\u043a\u0438 \u0432 \u043f\u043b\u0430\u0442\u044c\u044f\u0445 \u0438 \u0448\u0442\u0430\u043d\u0438\u0448\u043a\u0430\u0445", 
+            "url": "index", 
+            "content": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum arcu quis orci tempor tempus. Sed vehicula elit sit amet mauris gravida tristique tincidunt sem lobortis. Donec non ante vel justo consectetur fringilla. Etiam interdum congue quam, ut lacinia sapien egestas in. Maecenas a turpis nisi. Fusce et libero et dui ornare pulvinar. Nullam pellentesque, nisi hendrerit volutpat porttitor, nulla est dictum justo, ac ullamcorper velit erat ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque volutpat sodales feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\r\n", 
+            "keywords": "\u0441\u0442\u0440\u043e\u0439\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b, \u043a\u0438\u0440\u043f\u0438\u0447\u0438, \u0446\u0435\u043c\u0435\u043d\u0442"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b", 
+            "meta_description": "", 
+            "title": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b \u0438 \u043e\u0444\u0438\u0441\u044b", 
+            "url": "contacts", 
+            "content": "<p>\r\n\t\u0444\u044b\u0437\u0433\u0438\u043c\u0442\u0437\u0448\u0432\u0438\u0442\u0437\u0448\u0432\u0442\u0430\u044b\u043c</p>\r\n<p>\r\n\t<img alt=\"\" src=\"/media/uploads/groups/cat_armature.png\" style=\"width: 90px; height: 90px; \" /></p>\r\n<p>\r\n\t\u044b\u0436\u0444\u0442\u0430\u0438\u043c\u043f\u0437\u0436\u043b\u0432\u0448\u044b\u0438\u043c\u0442\u0430&nbsp;</p>\r\n", 
+            "keywords": ""
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "meta_description": "", 
+            "title": "\u041f\u0440\u0430\u0439\u0441-\u043b\u0438\u0441\u0442", 
+            "url": "products", 
+            "content": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum arcu quis orci tempor tempus. Sed vehicula elit sit amet mauris gravida tristique tincidunt sem lobortis. Donec non ante vel justo consectetur fringilla. Etiam interdum congue quam, ut lacinia sapien egestas in. Maecenas a turpis nisi. Fusce et libero et dui ornare pulvinar. Nullam pellentesque, nisi hendrerit volutpat porttitor, nulla est dictum justo, ac ullamcorper velit erat ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque volutpat sodales feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\r\n", 
+            "keywords": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "\u041a\u0430\u043a \u043a\u0443\u043f\u0438\u0442\u044c?", 
+            "meta_description": "", 
+            "title": "\u041a\u0430\u043a \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0441\u0442\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0443", 
+            "url": "how-to-buy", 
+            "content": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate magna vitae purus elementum iaculis commodo purus viverra. Aliquam erat volutpat. Quisque vel gravida nunc. Nullam tincidunt dui justo. Phasellus scelerisque augue sed felis pellentesque sodales. Quisque id purus libero, vel lobortis felis. Praesent eget sem quam, in tincidunt urna. Aenean quis urna quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ac tincidunt nisl. Donec nec quam erat, non tempus nisi. Morbi non enim vel ante euismod vehicula sed sed felis. Suspendisse potenti. Aliquam eget nisl sit amet nunc dapibus auctor. Ut id elit velit, at auctor est.</p>\r\n", 
+            "keywords": ""
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "\u0420\u0435\u043a\u0432\u0438\u0437\u0438\u0442\u044b", 
+            "meta_description": "", 
+            "title": "\u0420\u0435\u043a\u0432\u0438\u0437\u0438\u0442\u044b \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438", 
+            "url": "company-details", 
+            "content": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate magna vitae purus elementum iaculis commodo purus viverra. Aliquam erat volutpat. Quisque vel gravida nunc. Nullam tincidunt dui justo. Phasellus scelerisque augue sed felis pellentesque sodales. Quisque id purus libero, vel lobortis felis. Praesent eget sem quam, in tincidunt urna. Aenean quis urna quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ac tincidunt nisl. Donec nec quam erat, non tempus nisi. Morbi non enim vel ante euismod vehicula sed sed felis. Suspendisse potenti. Aliquam eget nisl sit amet nunc dapibus auctor. Ut id elit velit, at auctor est.</p>\r\n", 
+            "keywords": ""
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "", 
+            "meta_description": "", 
+            "title": "\u0417\u0430\u043a\u0430\u0437", 
+            "url": "order", 
+            "content": "<p>\r\n\t\u0417\u0430\u043f\u043e\u043b\u043d\u0438\u0442\u0435 \u0444\u043e\u0440\u043c\u0443 \u0441 \u0444\u0430\u0448\u0438\u043c\u0438 \u0434\u0430\u043d\u043d\u044b\u043c\u0438 \u0438 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 \u0441\u0432\u044f\u0436\u0435\u0442\u0441\u044f \u0441 \u0432\u0430\u043c\u0438 \u0432 \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0435\u0435 \u0432\u0440\u0435\u043c\u044f.</p>\r\n", 
+            "keywords": ""
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "", 
+            "meta_description": "", 
+            "title": "\u041a\u0430\u0440\u0442\u0430 \u0441\u0430\u0439\u0442\u0430", 
+            "url": "sitemap", 
+            "content": "<p>\r\n\t\u041f\u0443\u0442\u0435\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c \u043f\u043e \u0441\u0430\u0439\u0442\u0443</p>\r\n", 
+            "keywords": ""
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "page.page", 
+        "fields": {
+            "menu_title": "", 
+            "meta_description": "", 
+            "title": "\u041f\u043e\u0438\u0441\u043a \u043f\u043e \u0441\u0430\u0439\u0442\u0443", 
+            "url": "search", 
+            "content": "<p>\r\n\t\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0442\u043e, \u0447\u0442\u043e \u0445\u043e\u0442\u0438\u0442\u0435 \u043d\u0430\u0439\u0442\u0438 \u0438 \u0432\u0441\u0435 \u0442\u0430\u043a\u043e\u0435</p>\r\n", 
+            "keywords": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "page.news", 
+        "fields": {
+            "title": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c1", 
+            "url": "news-1", 
+            "content": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum arcu quis orci tempor tempus. Sed vehicula elit sit amet mauris gravida tristique tincidunt sem lobortis. Donec non ante vel justo consectetur fringilla. Etiam interdum congue quam, ut lacinia sapien egestas in. Maecenas a turpis nisi. Fusce et libero et dui ornare pulvinar. Nullam pellentesque, nisi hendrerit volutpat porttitor, nulla est dictum justo, ac ullamcorper velit erat ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque volutpat sodales feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\r\n<p>\r\n\tCurabitur sollicitudin fermentum placerat. Praesent mollis quam at mi feugiat posuere. Maecenas lacus libero, malesuada eu tempus sit amet, fringilla nec lectus. Nunc quam lorem, aliquet sit amet tempor sit amet, tempor vel velit. Praesent sodales accumsan purus, quis pharetra enim mollis nec. Nullam ut tellus urna, ac aliquam dui. Mauris sed justo turpis, id viverra augue. Suspendisse potenti. Praesent malesuada volutpat mi, nec interdum dui condimentum accumsan. Fusce sollicitudin, lectus in porta ultrices, velit arcu ullamcorper sem, eleifend placerat elit metus ut ipsum. Duis tempus, dui ut mollis pretium, lacus risus fermentum sem, ut luctus lectus nisl eu elit. Curabitur congue elementum neque. Fusce fermentum feugiat urna. Morbi eget metus dolor. Cras id venenatis tortor.</p>\r\n", 
+            "keywords": "\u043d\u043e\u0432\u043e\u0441\u0442\u044c, \u0438 \u0432\u0441\u0435 \u0442\u0430\u043a\u043e\u0435", 
+            "date": "2012-02-06", 
+            "smallcontent": "<p>\r\n\tQuisque congue nisl vitae lacus consequat venenatis. Morbi eu neque mi.</p>\r\n"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "page.news", 
+        "fields": {
+            "title": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c2", 
+            "url": null, 
+            "content": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum arcu quis orci tempor tempus. Sed vehicula elit sit amet mauris gravida tristique tincidunt sem lobortis. Donec non ante vel justo consectetur fringilla. Etiam interdum congue quam, ut lacinia sapien egestas in. Maecenas a turpis nisi. Fusce et libero et dui ornare pulvinar. Nullam pellentesque, nisi hendrerit volutpat porttitor, nulla est dictum justo, ac ullamcorper velit erat ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque volutpat sodales feugiat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\r\n<p>\r\n\tCurabitur sollicitudin fermentum placerat. Praesent mollis quam at mi feugiat posuere. Maecenas lacus libero, malesuada eu tempus sit amet, fringilla nec lectus. Nunc quam lorem, aliquet sit amet tempor sit amet, tempor vel velit. Praesent sodales accumsan purus, quis pharetra enim mollis nec. Nullam ut tellus urna, ac aliquam dui. Mauris sed justo turpis, id viverra augue. Suspendisse potenti. Praesent malesuada volutpat mi, nec interdum dui condimentum accumsan. Fusce sollicitudin, lectus in porta ultrices, velit arcu ullamcorper sem, eleifend placerat elit metus ut ipsum. Duis tempus, dui ut mollis pretium, lacus risus fermentum sem, ut luctus lectus nisl eu elit. Curabitur congue elementum neque. Fusce fermentum feugiat urna. Morbi eget metus dolor. Cras id venenatis tortor.</p>\r\n<p>\r\n\tQuisque congue nisl vitae lacus consequat venenatis. Morbi eu neque mi. Phasellus euismod dolor ut nulla porta volutpat quis dignissim lectus. Sed ullamcorper fringilla magna scelerisque consequat. Fusce vitae tortor nulla. In hac habitasse platea dictumst. Vestibulum tempus, massa pretium facilisis lobortis, enim quam dignissim nisl, sed aliquet diam ipsum ut purus. Sed varius, mi vel fermentum vehicula, lacus turpis pulvinar dui, id vulputate augue libero at arcu. In hac habitasse platea dictumst. Sed dui libero, imperdiet eget varius sit amet, blandit non turpis. Aenean libero elit, molestie sit amet accumsan tincidunt, pulvinar non sem. Aliquam posuere dictum sollicitudin. Nunc sed nisi odio. Cras tempor placerat ligula, quis fermentum ante lobortis eget. Aliquam euismod mattis imperdiet. Donec non nibh dui, ut pretium turpis.</p>\r\n", 
+            "keywords": "\u043d\u043e\u0432\u043e\u0441\u0442\u044c2, \u043d\u043e\u0432\u043e\u0441\u0442\u044c", 
+            "date": "2012-02-05", 
+            "smallcontent": "<p>\r\n\tCras commodo commodo sem id dapibus. Praesent hendrerit auctor neque, eu ultricies arcu suscipit eget.</p>\r\n"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "page.news", 
+        "fields": {
+            "title": "\u041d\u043e\u0432\u043e\u0441\u0442\u044c3", 
+            "url": null, 
+            "content": "<p>\r\n\tQuisque congue nisl vitae lacus consequat venenatis. Morbi eu neque mi. Phasellus euismod dolor ut nulla porta volutpat quis dignissim lectus. Sed ullamcorper fringilla magna scelerisque consequat. Fusce vitae tortor nulla. In hac habitasse platea dictumst. Vestibulum tempus, massa pretium facilisis lobortis, enim quam dignissim nisl, sed aliquet diam ipsum ut purus. Sed varius, mi vel fermentum vehicula, lacus turpis pulvinar dui, id vulputate augue libero at arcu. In hac habitasse platea dictumst. Sed dui libero, imperdiet eget varius sit amet, blandit non turpis. Aenean libero elit, molestie sit amet accumsan tincidunt, pulvinar non sem. Aliquam posuere dictum sollicitudin. Nunc sed nisi odio. Cras tempor placerat ligula, quis fermentum ante lobortis eget. Aliquam euismod mattis imperdiet. Donec non nibh dui, ut pretium turpis.</p>\r\n<p>\r\n\tCras commodo commodo sem id dapibus. Praesent hendrerit auctor neque, eu ultricies arcu suscipit eget. Donec scelerisque tempor elementum. Aliquam erat volutpat. Nunc odio quam, suscipit sed accumsan et, lacinia nec libero. Cras consequat urna at ante ultricies commodo. In varius, mauris nec ultrices dictum, tellus nisi fringilla dui, vel pulvinar sapien massa a diam. Quisque ut dignissim dui.</p>\r\n<p>\r\n\tSuspendisse pellentesque, lectus imperdiet lobortis luctus, sem enim laoreet neque, non tempus metus libero nec turpis. Phasellus faucibus arcu non est imperdiet pellentesque. Mauris consequat vestibulum facilisis. Donec vel nulla est. Phasellus facilisis placerat iaculis. Donec commodo vestibulum rutrum. Phasellus sed dui vitae nisi adipiscing tempus. Fusce eu sapien nunc. Phasellus sit amet augue eros. Nullam tincidunt consequat velit, eu tristique risus hendrerit eu. Praesent lacus nisi, feugiat pretium porttitor nec, fringilla et dui.</p>\r\n", 
+            "keywords": "\u043d\u043e\u0432\u043e\u0441\u0442\u044c 3", 
+            "date": "2012-02-06", 
+            "smallcontent": "<p>\r\n\tSuspendisse potenti. Praesent malesuada volutpat mi, nec interdum dui condimentum accumsan.</p>\r\n"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "page.news", 
+        "fields": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit", 
+            "url": null, 
+            "content": "<p>\r\n\tQuisque congue nisl vitae lacus consequat venenatis. Morbi eu neque mi. Phasellus euismod dolor ut nulla porta volutpat quis dignissim lectus. Sed ullamcorper fringilla magna scelerisque consequat. Fusce vitae tortor nulla. In hac habitasse platea dictumst. Vestibulum tempus, massa pretium facilisis lobortis, enim quam dignissim nisl, sed aliquet diam ipsum ut purus. Sed varius, mi vel fermentum vehicula, lacus turpis pulvinar dui, id vulputate augue libero at arcu. In hac habitasse platea dictumst. Sed dui libero, imperdiet eget varius sit amet, blandit non turpis. Aenean libero elit, molestie sit amet accumsan tincidunt, pulvinar non sem. Aliquam posuere dictum sollicitudin. Nunc sed nisi odio. Cras tempor placerat ligula, quis fermentum ante lobortis eget. Aliquam euismod mattis imperdiet. Donec non nibh dui, ut pretium turpis.</p>\r\n<p>\r\n\tCras commodo commodo sem id dapibus. Praesent hendrerit auctor neque, eu ultricies arcu suscipit eget. Donec scelerisque tempor elementum. Aliquam erat volutpat. Nunc odio quam, suscipit sed accumsan et, lacinia nec libero. Cras consequat urna at ante ultricies commodo. In varius, mauris nec ultrices dictum, tellus nisi fringilla dui, vel pulvinar sapien massa a diam. Quisque ut dignissim dui.</p>\r\n<p>\r\n\tSuspendisse pellentesque, lectus imperdiet lobortis luctus, sem enim laoreet neque, non tempus metus libero nec turpis. Phasellus faucibus arcu non est imperdiet pellentesque. Mauris consequat vestibulum facilisis. Donec vel nulla est. Phasellus facilisis placerat iaculis. Donec commodo vestibulum rutrum. Phasellus sed dui vitae nisi adipiscing tempus. Fusce eu sapien nunc. Phasellus sit amet augue eros. Nullam tincidunt consequat velit, eu tristique risus hendrerit eu. Praesent lacus nisi, feugiat pretium porttitor nec, fringilla et dui.</p>\r\n", 
+            "keywords": "lorem, ipsum", 
+            "date": "2012-02-03", 
+            "smallcontent": "<p>\r\n\tNunc quam lorem, aliquet sit amet tempor sit amet, tempor vel velit. Praesent sodales accumsan purus, quis pharetra enim mollis nec.</p>\r\n"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "page.news", 
+        "fields": {
+            "title": "Morbi eget metus dolor. Cras id venenatis tortor. ", 
+            "url": null, 
+            "content": "<p>\r\n\tCurabitur sollicitudin fermentum placerat. Praesent mollis quam at mi feugiat posuere. Maecenas lacus libero, malesuada eu tempus sit amet, fringilla nec lectus. Nunc quam lorem, aliquet sit amet tempor sit amet, tempor vel velit. Praesent sodales accumsan purus, quis pharetra enim mollis nec. Nullam ut tellus urna, ac aliquam dui. Mauris sed justo turpis, id viverra augue. Suspendisse potenti. Praesent malesuada volutpat mi, nec interdum dui condimentum accumsan. Fusce sollicitudin, lectus in porta ultrices, velit arcu ullamcorper sem, eleifend placerat elit metus ut ipsum. Duis tempus, dui ut mollis pretium, lacus risus fermentum sem, ut luctus lectus nisl eu elit. Curabitur congue elementum neque. Fusce fermentum feugiat urna. Morbi eget metus dolor. Cras id venenatis tortor.</p>\r\n<p>\r\n\tQuisque congue nisl vitae lacus consequat venenatis. Morbi eu neque mi. Phasellus euismod dolor ut nulla porta volutpat quis dignissim lectus. Sed ullamcorper fringilla magna scelerisque consequat. Fusce vitae tortor nulla. In hac habitasse platea dictumst. Vestibulum tempus, massa pretium facilisis lobortis, enim quam dignissim nisl, sed aliquet diam ipsum ut purus. Sed varius, mi vel fermentum vehicula, lacus turpis pulvinar dui, id vulputate augue libero at arcu. In hac habitasse platea dictumst. Sed dui libero, imperdiet eget varius sit amet, blandit non turpis. Aenean libero elit, molestie sit amet accumsan tincidunt, pulvinar non sem. Aliquam posuere dictum sollicitudin. Nunc sed nisi odio. Cras tempor placerat ligula, quis fermentum ante lobortis eget. Aliquam euismod mattis imperdiet. Donec non nibh dui, ut pretium turpis.</p>\r\n<p>\r\n\tCras commodo commodo sem id dapibus. Praesent hendrerit auctor neque, eu ultricies arcu suscipit eget. Donec scelerisque tempor elementum. Aliquam erat volutpat. Nunc odio quam, suscipit sed accumsan et, lacinia nec libero. Cras consequat urna at ante ultricies commodo. In varius, mauris nec ultrices dictum, tellus nisi fringilla dui, vel pulvinar sapien massa a diam. Quisque ut dignissim dui.</p>\r\n", 
+            "keywords": "Curabitur, sollicitudin, fermentum, placerat", 
+            "date": "2012-02-04", 
+            "smallcontent": "<p>\r\n\tCurabitur congue elementum neque. Fusce fermentum feugiat urna. Morbi eget metus dolor. Cras id venenatis tortor.</p>\r\n"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "page.message", 
+        "fields": {
+            "content": ";bl bljhblhb", 
+            "date": "2012-02-18 14:23:32", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "page.message", 
+        "fields": {
+            "content": ";bl bljhblhb", 
+            "date": "2012-02-18 14:23:53", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "page.message", 
+        "fields": {
+            "content": ";bl bljhblhb", 
+            "date": "2012-02-18 14:24:59", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "page.message", 
+        "fields": {
+            "content": ";bl bljhblhb", 
+            "date": "2012-02-18 14:26:04", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "page.message", 
+        "fields": {
+            "content": ";bl bljhblhb", 
+            "date": "2012-02-18 14:26:55", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "page.message", 
+        "fields": {
+            "content": ";bl bljhblhb", 
+            "date": "2012-02-18 14:27:41", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "page.message", 
+        "fields": {
+            "content": "ljhl jhjvj", 
+            "date": "2012-02-18 14:29:34", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "page.message", 
+        "fields": {
+            "content": "jkj kjb j ", 
+            "date": "2012-02-18 22:00:26", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "a@a.aa"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "page.message", 
+        "fields": {
+            "content": "klhblb  jb jkb", 
+            "date": "2012-02-18 22:06:11", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "page.message", 
+        "fields": {
+            "content": "\u043b\u0434\u0438\u0434\u0438 \u043b\u043e\u0442\u0434\u043b \u043b\u043e\u0442 \u043b\u0434\u043e\u0442", 
+            "date": "2012-02-18 22:09:54", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "aterentev@baltostorage.com"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "page.message", 
+        "fields": {
+            "content": "ojh jvgv ghv", 
+            "date": "2012-02-18 22:11:52", 
+            "sender": "\u0410\u043b\u0435\u043a\u0441\u0435\u0439 \u0422\u0435\u0440\u0435\u043d\u0442\u044c\u0435\u0432", 
+            "email": "alexey.terentiev@gmail.com"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "page.link", 
+        "fields": {
+            "page": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "page.link", 
+        "fields": {
+            "page": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "page.link", 
+        "fields": {
+            "page": 3
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "page.link", 
+        "fields": {
+            "page": 5
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "page.link", 
+        "fields": {
+            "page": 4
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "page.link", 
+        "fields": {
+            "page": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "page.link", 
+        "fields": {
+            "page": 4
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "page.link", 
+        "fields": {
+            "page": 5
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "page.link", 
+        "fields": {
+            "page": 3
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "page.link", 
+        "fields": {
+            "page": 1
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "page.footmenulink", 
+        "fields": {
+            "position": 0
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "page.footmenulink", 
+        "fields": {
+            "position": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "page.footmenulink", 
+        "fields": {
+            "position": 2
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "page.footmenulink", 
+        "fields": {
+            "position": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "page.footmenulink", 
+        "fields": {
+            "position": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "page.leftmenulink", 
+        "fields": {
+            "position": 0
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "page.leftmenulink", 
+        "fields": {
+            "position": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "page.leftmenulink", 
+        "fields": {
+            "position": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "page.leftmenulink", 
+        "fields": {
+            "position": 3
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "page.leftmenulink", 
+        "fields": {
+            "position": 5
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "shop.unit", 
+        "fields": {
+            "title": "\u0442\u043e\u043d\u043d\u0430"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "shop.unit", 
+        "fields": {
+            "title": "\u0448\u0442"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\t\u041a\u0438\u0440\u043f\u0438\u0447\u0438, \u043e\u0431\u043b\u0438\u0446\u043e\u0432\u043e\u0447\u043d\u044b\u0435 \u0438 \u043d\u0435 \u043e\u0447\u0435\u043d\u044c. \u041e\u0447\u0435\u043d\u044c \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435, \u043a\u0440\u0443\u0442\u044b\u0435 \u0438 \u0432\u0441\u0435 \u0442\u0430\u043a\u043e\u0435. \u0421\u0430\u043c\u044b\u0435 \u044d\u043a\u043e\u043b\u043e\u0433\u0438\u0447\u043d\u044b\u0435.</p>\r\n", 
+            "title": "\u041a\u0438\u0440\u043f\u0438\u0447\u0438", 
+            "image": "uploads/groups/cat_brick.png", 
+            "productgroup": null, 
+            "products_count": 5, 
+            "keywords": null, 
+            "position": 0
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\tMaecenas a turpis nisi. Fusce et libero et dui ornare pulvinar. Nullam pellentesque, nisi hendrerit volutpat porttitor, nulla est dictum justo, ac ullamcorper velit erat ut dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque volutpat sodales feugiat.</p>\r\n", 
+            "title": "\u041b\u0438\u0446\u0435\u0432\u043e\u0439", 
+            "image": "uploads/groups/bricks_image1.jpg", 
+            "productgroup": 1, 
+            "products_count": 4, 
+            "keywords": null, 
+            "position": 0
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\tCurabitur sollicitudin fermentum placerat. Praesent mollis quam at mi feugiat posuere. Maecenas lacus libero, malesuada eu tempus sit amet, fringilla nec lectus. Nunc quam lorem, aliquet sit amet tempor sit amet, tempor vel velit. Praesent sodales accumsan purus, quis pharetra enim mollis nec.</p>\r\n", 
+            "title": "\u0413\u043b\u0430\u0434\u043a\u043e\u0433\u043e \u043f\u0440\u043e\u0444\u0438\u043b\u044f", 
+            "image": "uploads/groups/cat_armature_2.png", 
+            "productgroup": 2, 
+            "products_count": 0, 
+            "keywords": null, 
+            "position": 0
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\t\u0411\u043b\u0430 \u0431\u043b\u0430 \u0431\u043b\u0430</p>\r\n", 
+            "title": "\u0415\u0449\u0435 \u043e\u0434\u0438\u043d \u0432\u0438\u0434 \u043a\u0438\u0440\u043f\u0438\u0447\u0430", 
+            "image": "uploads/groups/bricks_image1_1.jpg", 
+            "productgroup": 6, 
+            "products_count": 0, 
+            "keywords": null, 
+            "position": 0
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum arcu quis orci tempor tempus. Sed vehicula elit sit amet mauris gravida tristique tincidunt sem lobortis. Donec non ante vel justo consectetur fringilla. Etiam interdum congue quam, ut lacinia sapien egestas in. Maecenas a turpis nisi.</p>\r\n", 
+            "title": "\u0426\u0435\u043c\u0435\u043d\u0442 \u0441\u043c\u0435\u0441\u0438", 
+            "image": "uploads/groups/cat_cement.png", 
+            "productgroup": null, 
+            "products_count": 0, 
+            "keywords": null, 
+            "position": 1
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam interdum arcu quis orci tempor tempus. Sed vehicula elit sit amet mauris gravida tristique tincidunt sem lobortis.</p>\r\n", 
+            "title": "\u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439", 
+            "image": "uploads/groups/bricks_image2.jpg", 
+            "productgroup": 1, 
+            "products_count": 1, 
+            "keywords": null, 
+            "position": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\t\u041d\u0435\u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u043a\u0430\u043a\u0430\u044f \u0436\u0435 \u043a\u043b\u0430\u0441\u0441\u043d\u0430\u044f \u0430\u0440\u043c\u0430\u0442\u0443\u0440\u0430.</p>\r\n", 
+            "title": "\u0410\u0440\u043c\u0430\u0442\u0443\u0440\u0430", 
+            "image": "uploads/groups/cat_armature.png", 
+            "productgroup": null, 
+            "products_count": 0, 
+            "keywords": null, 
+            "position": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "shop.productgroup", 
+        "fields": {
+            "description": "<p>\r\n\tCurabitur sollicitudin fermentum placerat. Praesent mollis quam at mi feugiat posuere. Maecenas lacus libero, malesuada eu tempus sit amet, fringilla nec lectus. Nunc quam lorem, aliquet sit amet tempor sit amet, tempor vel velit. Praesent sodales accumsan purus, quis pharetra enim mollis nec. Nullam ut tellus urna, ac aliquam dui. Mauris sed justo turpis, id viverra augue. Suspendisse potenti. Praesent malesuada volutpat mi, nec interdum dui condimentum accumsan.</p>\r\n", 
+            "title": "\u0416\u0411\u0418", 
+            "image": "uploads/groups/cat_jbi.png", 
+            "productgroup": null, 
+            "products_count": 0, 
+            "keywords": null, 
+            "position": 3
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "shop.product", 
+        "fields": {
+            "load": 6000, 
+            "meta_description": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \"\u0441\u043e\u043b\u043e\u043c\u0430\" ", 
+            "description": "<p>\r\n\t\u0416\u0435\u043b\u0442\u044b\u0439 \u043a\u0438\u0440\u043f\u0438\u0447. \u0411\u043b\u0430-\u0431\u043b\u0430-\u0431\u043b\u0430.</p>\r\n", 
+            "title": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \"\u0441\u043e\u043b\u043e\u043c\u0430\" ", 
+            "price": 10.5, 
+            "productgroup": 6, 
+            "keywords": "\u043a\u0438\u0440\u043f\u0438\u0447, \u043e\u0431\u043b\u0438\u0446\u043e\u0432\u043e\u0447\u043d\u044b\u0439, \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0438\u0440\u043f\u0438\u0447, \u043c-150, \u0441\u043e\u043b\u043e\u043c\u043a\u0430", 
+            "position": 0, 
+            "property": "<p>\r\n\t\u041c-150</p>\r\n", 
+            "unit": 2
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "shop.product", 
+        "fields": {
+            "load": 6000, 
+            "meta_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, dolor ut facilisis sodales", 
+            "description": "<p>\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, dolor ut facilisis sodales, felis nunc fermentum sem, nec ornare turpis ante eu risus. Nullam commodo iaculis enim, in convallis diam blandit quis. Curabitur ut erat quam. Duis quis orci sit amet elit facilisis ornare sit amet sed felis. Pellentesque id nunc vel est lobortis eleifend ut elementum lectus. Etiam vel arcu a nibh ornare bibendum. Maecenas posuere dapibus urna in luctus. Morbi et ipsum justo, sed facilisis eros. Aenean fermentum aliquam lorem id laoreet.</p>\r\n", 
+            "title": "\u041a\u0438\u0440\u043f\u0438\u0447", 
+            "price": 9.5, 
+            "productgroup": 5, 
+            "keywords": "\u043a\u0438\u0440\u043f\u0438\u0447 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439, \u041a\u0438\u0440\u043f\u0438\u0447 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439, \u0421\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043a\u0438\u0440\u043f\u0438\u0447, \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043a\u0438\u0440\u043f\u0438\u0447", 
+            "position": 0, 
+            "property": "<p>\r\n\t\u041a\u0438\u0440\u043f\u0438\u0447 \u043e\u0434\u0438\u043d\u0430\u0440\u043d\u044b\u0439</p>\r\n<p>\r\n\t\u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u041c150 F50</p>\r\n", 
+            "unit": 2
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "shop.product", 
+        "fields": {
+            "load": 6000, 
+            "meta_description": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u043b\u0438\u0446\u0435\u0432\u043e\u0439.", 
+            "description": "<p>\r\n\t\u041d\u0443 \u043e\u0447\u0435\u043d\u044c \u043a\u0440\u0430\u0441\u0438\u0432\u044b\u0439 \u043a\u0438\u0440\u043f\u0438\u0447.</p>\r\n", 
+            "title": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439", 
+            "price": 10.5, 
+            "productgroup": 6, 
+            "keywords": "\u043a\u0438\u0440\u043f\u0438\u0447, \u043e\u0431\u043b\u0438\u0446\u043e\u0432\u043e\u0447\u043d\u044b\u0439, \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0438\u0440\u043f\u0438\u0447, \u043c-150", 
+            "position": 1, 
+            "property": "<p>\r\n\t\u041c-150</p>\r\n", 
+            "unit": 2
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "shop.product", 
+        "fields": {
+            "load": 6000, 
+            "meta_description": "", 
+            "description": "<p>\r\n\t\u0412\u0435\u0441\u044c \u0442\u0430\u043a\u043e\u0439 \u043a\u0440\u0430\u0441\u0438\u0432\u044b\u0439 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u043a\u0438\u0440\u043f\u0438\u0447.</p>\r\n", 
+            "title": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \"\u043f\u0435\u0440\u0441\u0438\u043a\"", 
+            "price": 10.5, 
+            "productgroup": 6, 
+            "keywords": "", 
+            "position": 2, 
+            "property": "<p>\r\n\t\u041a\u0438\u0440\u043f\u0438\u0447 \u043e\u0434\u0438\u043d\u0430\u0440\u043d\u044b\u0439</p>\r\n<p>\r\n\t\u043b\u0438\u0446\u0435\u0432\u043e\u0439 \u041c150 F50</p>\r\n<p>\r\n\t\u0426\u0432\u0435\u0442: \u043f\u0435\u0440\u0441\u0438\u043a</p>\r\n<p>\r\n\t\u041f\u0443\u0441\u0442\u043e\u0442\u043d\u043e\u0441\u0442\u044c: 35 %</p>\r\n<p>\r\n\t\u0420\u0430\u0437\u043c\u0435\u0440, \u043c\u043c: 250 x 120 x 65</p>\r\n<p>\r\n\t\u0412\u0435\u0441: 2,5 \u043a\u0433</p>\r\n<p>\r\n\t\u041a\u043e\u043b-\u0432\u043e \u043d\u0430 \u043f\u043e\u0434\u0434\u043e\u043d\u0435: 480 \u0448\u0442.</p>\r\n", 
+            "unit": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "shop.productimage", 
+        "fields": {
+            "image": "uploads/products/bricks_image1_2.jpg", 
+            "service": 4, 
+            "title": "\u0422\u0430\u043a \u043e\u043d \u0432\u044b\u0433\u043b\u044f\u0434\u0438\u0442"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "shop.productimage", 
+        "fields": {
+            "image": "uploads/products/bricks_image2.jpg", 
+            "service": 2, 
+            "title": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043b\u0438\u0446\u0435\u0432\u043e\u0439 \"\u0441\u043e\u043b\u043e\u043c\u0430\" "
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "shop.productimage", 
+        "fields": {
+            "image": "uploads/products/bricks_image2_1.jpg", 
+            "service": 3, 
+            "title": "\u041f\u0435\u0440\u0441\u0438\u043a"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "shop.productimage", 
+        "fields": {
+            "image": "uploads/products/black_simpsons_2.jpg", 
+            "service": 3, 
+            "title": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043f\u0435\u0440\u0441\u0438\u043a"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "shop.order", 
+        "fields": {
+            "description": "\u0425\u0430\u0447\u0443 \u043c\u043d\u043e\u0433\u043e", 
+            "company": "\u0425\u0443\u0435\u0440\u044b\u0433\u0438 \u0418\u041d\u041a", 
+            "phone": "8 (9672) 13 06 36", 
+            "date": "2012-02-13 23:08:48", 
+            "email": "a@a.aa", 
+            "name": "\u041b\u0435\u0432\u043e\u043d"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "shop.order", 
+        "fields": {
+            "description": "\u0425\u0430\u0447\u0443 \u043c\u043d\u043e\u0433\u043e", 
+            "company": "\u0425\u0443\u0435\u0440\u044b\u0433\u0438 \u0418\u041d\u041a", 
+            "phone": "8 (9672) 13 06 36", 
+            "date": "2012-02-13 23:09:17", 
+            "email": "a@a.aa", 
+            "name": "\u041b\u0435\u0432\u043e\u043d"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "shop.order", 
+        "fields": {
+            "description": "\u0411\u043b\u0430 \u0431\u043b\u0430 \u0431\u043b\u0430", 
+            "company": "\u0425\u0443\u0435\u0440\u044b\u0433\u0438 \u0418\u041d\u041a", 
+            "phone": "8 (9672) 13 06 36", 
+            "date": "2012-02-13 23:16:53", 
+            "email": "a@a.aa", 
+            "name": "\u041b\u0435\u0432\u043e\u043d"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "shop.order", 
+        "fields": {
+            "description": "ojhb pkhbojhb ohjbojhb ", 
+            "company": "\u0425\u0443\u0435\u0440\u044b\u0433\u0438 \u0418\u041d\u041a", 
+            "phone": "8 (9672) 13 06 36", 
+            "date": "2012-02-14 00:19:45", 
+            "email": "a@a.aa", 
+            "name": "\u041b\u0435\u0432\u043e\u043d"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "shop.order", 
+        "fields": {
+            "description": "ohjboj lhjbljbjhbojhb", 
+            "company": "\u0425\u0443\u0435\u0440\u044b\u0433\u0438 \u0418\u041d\u041a", 
+            "phone": "8 (9672) 13 06 36", 
+            "date": "2012-02-14 00:26:08", 
+            "email": "a@a.aa", 
+            "name": "\u041b\u0435\u0432\u043e\u043d"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "shop.order", 
+        "fields": {
+            "description": "", 
+            "company": "pystars.com", 
+            "phone": "12312", 
+            "date": "2012-02-14 11:53:51", 
+            "email": "va.bolshakov@gmail.com", 
+            "name": "Vasiliy Bolshakov"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "shop.order", 
+        "fields": {
+            "description": "\u041f\u0440\u0438\u0432\u0435\u0442 \u043c\u0438\u0440", 
+            "company": "\u0425\u0443\u0435\u0440\u044b\u0433\u0438 \u0418\u041d\u041a", 
+            "phone": "8 (9672) 13 06 36", 
+            "date": "2012-02-18 23:11:45", 
+            "email": "aterentev@baltostorage.com", 
+            "name": "\u041b\u0435\u0432\u043e\u043d"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 42000, 
+            "product": 1, 
+            "order": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 30000, 
+            "product": 3, 
+            "order": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 48000, 
+            "product": 2, 
+            "order": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 42000, 
+            "product": 1, 
+            "order": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 30000, 
+            "product": 3, 
+            "order": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 48000, 
+            "product": 2, 
+            "order": 2
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 42000, 
+            "product": 1, 
+            "order": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 30000, 
+            "product": 3, 
+            "order": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 48000, 
+            "product": 2, 
+            "order": 3
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 42000, 
+            "product": 1, 
+            "order": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 30000, 
+            "product": 3, 
+            "order": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 48000, 
+            "product": 2, 
+            "order": 4
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 18000, 
+            "product": 1, 
+            "order": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 12000, 
+            "product": 3, 
+            "order": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 42000, 
+            "product": 2, 
+            "order": 5
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 30000, 
+            "product": 3, 
+            "order": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 6000, 
+            "product": 2, 
+            "order": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "shop.ordercount", 
+        "fields": {
+            "count": 60000, 
+            "product": 2, 
+            "order": 7
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": 7
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete message", 
+            "content_type": 4
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": 1
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": 3
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": 5
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_filemanager", 
+            "name": "Can add \u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u0444\u0430\u0439\u043b\u043e\u0432", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_filemanager", 
+            "name": "Can change \u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u0444\u0430\u0439\u043b\u043e\u0432", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_filemanager", 
+            "name": "Can delete \u041c\u0435\u043d\u0435\u0434\u0436\u0435\u0440 \u0444\u0430\u0439\u043b\u043e\u0432", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "edit", 
+            "name": "Can edit", 
+            "content_type": 8
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_footmenulink", 
+            "name": "Can add \u0421\u0441\u044b\u043b\u043a\u0430 \u0432\u043d\u0438\u0437\u0443", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_footmenulink", 
+            "name": "Can change \u0421\u0441\u044b\u043b\u043a\u0430 \u0432\u043d\u0438\u0437\u0443", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_footmenulink", 
+            "name": "Can delete \u0421\u0441\u044b\u043b\u043a\u0430 \u0432\u043d\u0438\u0437\u0443", 
+            "content_type": 19
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_leftmenulink", 
+            "name": "Can add \u0421\u0441\u044b\u043b\u043a\u0430 \u0441\u043b\u0435\u0432\u0430", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_leftmenulink", 
+            "name": "Can change \u0421\u0441\u044b\u043b\u043a\u0430 \u0441\u043b\u0435\u0432\u0430", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_leftmenulink", 
+            "name": "Can delete \u0421\u0441\u044b\u043b\u043a\u0430 \u0441\u043b\u0435\u0432\u0430", 
+            "content_type": 20
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_link", 
+            "name": "Can add \u0421\u0441\u044b\u043b\u043a\u0430", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_link", 
+            "name": "Can change \u0421\u0441\u044b\u043b\u043a\u0430", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_link", 
+            "name": "Can delete \u0421\u0441\u044b\u043b\u043a\u0430", 
+            "content_type": 18
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add \u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change \u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete \u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435", 
+            "content_type": 11
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_news", 
+            "name": "Can add \u041d\u043e\u0432\u043e\u0441\u0442\u044c", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_news", 
+            "name": "Can change \u041d\u043e\u0432\u043e\u0441\u0442\u044c", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_news", 
+            "name": "Can delete \u041d\u043e\u0432\u043e\u0441\u0442\u044c", 
+            "content_type": 10
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_page", 
+            "name": "Can add \u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_page", 
+            "name": "Can change \u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_page", 
+            "name": "Can delete \u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430", 
+            "content_type": 9
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": 6
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_order", 
+            "name": "Can add \u0417\u0430\u043a\u0430\u0437", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_order", 
+            "name": "Can change \u0417\u0430\u043a\u0430\u0437", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_order", 
+            "name": "Can delete \u0417\u0430\u043a\u0430\u0437", 
+            "content_type": 16
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_ordercount", 
+            "name": "Can add \u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_ordercount", 
+            "name": "Can change \u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_ordercount", 
+            "name": "Can delete \u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e", 
+            "content_type": 17
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_product", 
+            "name": "Can add \u0422\u043e\u0432\u0430\u0440", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_product", 
+            "name": "Can change \u0422\u043e\u0432\u0430\u0440", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_product", 
+            "name": "Can delete \u0422\u043e\u0432\u0430\u0440", 
+            "content_type": 14
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_productgroup", 
+            "name": "Can add \u0413\u0440\u0443\u043f\u043f\u0430 \u0442\u043e\u0432\u0430\u0440\u043e\u0432", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_productgroup", 
+            "name": "Can change \u0413\u0440\u0443\u043f\u043f\u0430 \u0442\u043e\u0432\u0430\u0440\u043e\u0432", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_productgroup", 
+            "name": "Can delete \u0413\u0440\u0443\u043f\u043f\u0430 \u0442\u043e\u0432\u0430\u0440\u043e\u0432", 
+            "content_type": 13
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_productimage", 
+            "name": "Can add \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_productimage", 
+            "name": "Can change \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_productimage", 
+            "name": "Can delete \u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442", 
+            "content_type": 15
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_unit", 
+            "name": "Can add \u0415\u0434\u0438\u043d\u0438\u0446\u0430 \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u044f \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_unit", 
+            "name": "Can change \u0415\u0434\u0438\u043d\u0438\u0446\u0430 \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u044f \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_unit", 
+            "name": "Can delete \u0415\u0434\u0438\u043d\u0438\u0446\u0430 \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u044f \u0441\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u0438", 
+            "content_type": 12
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "levon", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2012-02-14 11:56:18", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$6a2d3$e635add30b1b3af5ea3260a144186e3f6fe17c59", 
+            "email": "2928539@gmail.com", 
+            "date_joined": "2012-02-06 13:48:25"
+        }
+    }
+]

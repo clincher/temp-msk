@@ -1,0 +1,7 @@
+@charset "utf-8";
+.nav-outer{ padding-bottom:49px;}
+.nav li{padding:5px 0 5px 0;}
+.aside-catalog li{ padding:0;}
+.search .txt input, .subscribe .txt input{ height:15px; line-height:15px; border:0;}
+.text-block ul li { list-style-position:outside;}
+

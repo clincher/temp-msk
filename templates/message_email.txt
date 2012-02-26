@@ -1,0 +1,7 @@
+Отправитель:
+{{msg.sender}}
+{{msg.email}}
+
+Сообщение:
+
+{{msg.content|safe}}

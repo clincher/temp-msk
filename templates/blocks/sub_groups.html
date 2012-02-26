@@ -1,0 +1,6 @@
+{% if groups %}{% load menues %}<ul class="sitemap">{% for group in groups %}
+<li>
+    <a href="{% url price_list group.pk %}">{{group.title|safe}}</a>
+    {% sub_groups group.sub_groups.all %}
+</li>
+{% endfor %}</ul>{% endif %}

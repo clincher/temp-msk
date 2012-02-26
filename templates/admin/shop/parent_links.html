@@ -1,0 +1,6 @@
+{% if results %}
+    <a onclick="get_sub_elements('')" style="cursor: pointer; font-size: 8pt;">Основные группы</a> >
+{% endif %}
+{% for result in results %}
+        <a onclick="get_sub_elements({{ result.id }})" style="cursor: pointer; font-size: 8pt;">{{ result }}</a> {% if not forloop.last %}>{% endif %}
+{% endfor %}

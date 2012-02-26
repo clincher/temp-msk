@@ -1,0 +1,44 @@
+{% extends "base/main.html" %}
+{% block main_content %}
+<script type="text/javascript" src="/media/js/NFLightBox.js"></script>
+<link rel="stylesheet" type="text/css" href="/media/css/nf.lightbox.css"/>
+	<div id="calc-result"></div><br/><br/>
+	<form id="services-form">
+	{% for s in services %}
+	<div id="product-{{s.id}}">
+		<h2>{{s.title}}</h2>
+		<p style="text-align:justify;"><img alt="{{s.title}}" src="{{s.image.url_150x150|safe}}" align="left" style="margin-right:10px;">{{s.description|safe}}</p>
+		<span>Цена: <b>{{s.price}}</b></span>
+		<input type="checkbox" name="services[]" price="{{s.price|floatformat:2}}" value="{{s.id}}" class="service-price" onClick="recalculate();"/>
+		<input type="text" name="num-{{s.id}}" id="num-{{s.id}}" value="1" class="service-num" oninput="recalculate();"/>
+		<br/><br/>
+		{% if s.screenshotes.all %}
+		<script type="text/javascript">
+		    $(function() {
+		        $('#gallery-{{s.id}} a').lightBox({containerResizeSpeed: 350});
+		    });
+		</script>
+		<div class="gallery" id="gallery-{{s.id}}">
+		<ul>
+			{% for screen in s.screenshotes.all %}
+			<li><a href="{{screen.image.url_600x600|safe}}" title="{{screen.title|safe}}"><img alt="{{screen.title|safe}}" src="{{screen.image.url_150x150|safe}}"/></a></li>
+			{% endfor %}
+		</ul>
+		</div>
+		{% endif %}
+		<br/><br/>
+		<hr/>
+		<br/><br/>
+	</div>
+	{% endfor %}
+	</form>
+<a id="order-button">Заказать</a>
+<script type="text/javascript">
+<!--
+recalculate();
+//-->
+</script>
+<!-- center close -->
+{% endblock %}
+{% block right_side_bar %}
+{% endblock %}

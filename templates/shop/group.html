@@ -1,0 +1,35 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+    {% left_menu group %}
+{% endblock %}
+{% block content %}
+        <h1>{{group.title|safe}}</h1>
+        {% navigation group %}
+        <div class="line"></div>
+        <div id="cart_link"><a href="{% url order_link %}">Заявка</a></div>
+        <div class="catalog">
+            {% for group in groups %}
+            <div>
+                <a href="{% url price_list group.pk %}" title="{{group.title}}">
+                    <img src="{{group.get_image_url}}" alt="{{group.title}}"><br/>
+                    {{group.title}}<em>({{group.products_count}})</em></a>
+                <ul>
+                {% for sub_group in group.sub_groups.all %}
+                    <li><a href="{% url price_list sub_group.pk %}" title="{{sub_group.title}}">{{sub_group.title}}</a>{% if not forloop.last%},{% endif %}</li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% cycle '' '' '<p class="clr"></p>' %}
+            {% endfor %}
+            <p class="clr"></p>
+            {% productlist group %}
+
+            {% for group in groups %}
+            {% productlist group %}
+            {% endfor %}
+
+        </div> <!-- catalog -->
+
+    <p class="small">{{p.content|safe}}</p>
+
+{% endblock %}

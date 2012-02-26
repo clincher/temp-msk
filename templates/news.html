@@ -1,0 +1,21 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+{% left_menu %}
+{% endblock %}
+{% block content %}
+<h1>{{news.title|safe}}</h1>
+<ul class="breadcrumbs">
+    <li><a title="Главная" href="/">Главная</a></li>
+    <li>/</li>
+    <li><a title="Новости компании" href="{% url news_main %}">Новости</a></li>
+    <li>/</li>
+    <li>{{news.date|date:"d.m.Y"}}</li>
+</ul>
+<div id="next-prev">
+    {% if news.get_previous_by_date %}<a id="prev" href="{{ news.get_previous_by_date.get_url }}">Предыдущая</a>{% endif %}
+    {% if news.get_next_by_date %}<a id="next" href="{{ news.get_next_by_date.get_url }}">Следующая</a>{% endif %}
+</div>
+<div class="clr"></div>
+<div class="line"></div>
+{{news.content|safe}}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "home.html" %}{% load menues %}
+{% block left_menu %}
+{% left_menu %}
+{% endblock %}
+{% block content %}
+<h1>{{p.title|safe}}</h1>
+<ul class="breadcrumbs">
+    <li><a title="Главная" href="/">Главная</a></li>
+    <li>/</li>
+    <li>{{p|safe}}</li>
+</ul>
+<div class="line"></div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<div id="cse" style="width: 100%;">Загрузка</div>
+<script src="//www.google.ru/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load('search', '1', {language : 'ru', style : google.loader.themes.MINIMALIST});
+    google.setOnLoadCallback(function() {
+        var customSearchControl = new google.search.CustomSearchControl('{{SEARCH_API_KEY}}');
+        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+        customSearchControl.draw('cse');
+        {% if query %}
+            customSearchControl.execute('{{ query|safe }}');
+        {% endif %}
+        }, true);
+</script>
+{% endblock %}

@@ -1,0 +1,6 @@
+<ul>
+    {% for link in links %}
+    <li><a href="{% url page_link link.page.url %}" title="{{link.page.title}}">{{link.page.menu_title}}</a></li>
+    {% if not forloop.last %}<li>|</li>{% endif %}
+    {% endfor %}
+</ul> <!-- nav -->

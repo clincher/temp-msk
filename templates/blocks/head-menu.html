@@ -1,0 +1,14 @@
+        <ul id="top-menu" class="ui-corner-all ui-widget-header">
+            {% for link in links %}
+            <li>
+                <a href="{% url page_link link.page.url %}" class="first">{{ link|safe }}</a>
+                {% if link.sublinks %}
+                <ul class="submenu ui-corner-all">
+                    {% for sublink in link.sublinks %}
+                    <li><a href="{% url page_link sublink.page.url %}">{{ sublink|safe }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
