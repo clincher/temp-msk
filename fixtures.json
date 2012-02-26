@@ -2323,7 +2323,7 @@
         "pk": 1, 
         "model": "auth.user", 
         "fields": {
-            "username": "levon", 
+            "username": "admin",
             "first_name": "", 
             "last_name": "", 
             "is_active": true, 
@@ -2332,8 +2332,8 @@
             "last_login": "2012-02-14 11:56:18", 
             "groups": [], 
             "user_permissions": [], 
-            "password": "sha1$6a2d3$e635add30b1b3af5ea3260a144186e3f6fe17c59", 
-            "email": "2928539@gmail.com", 
+            "password": "sha1$b645a$9ccc5c5d3f203697b6a2ce60667603edcb315c8d",
+            "email": "va.bolshakov@gmail.com",
             "date_joined": "2012-02-06 13:48:25"
         }
     }

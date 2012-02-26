@@ -66,7 +66,7 @@ class Message(models.Model):
     date = models.DateTimeField(u'Дата', auto_now=True)
     
     def __unicode__(self):
-        return '{0} {1}'.format(self.sender, str(self.date))
+        return u'{0} {1}'.format(self.sender, str(self.date))
 
 
 class Link(models.Model):
