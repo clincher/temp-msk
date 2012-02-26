@@ -1,15 +1,14 @@
 #-*- coding: utf-8 -*-
-from django.contrib.contenttypes.models import ContentType
+from django.conf import settings
 from django.db.models.aggregates import Max
-from django.http import HttpResponse
 from models import News, Page, Message, LeftMenuLink, FootMenuLink
 from django.contrib import admin
 
 js_admin = js = (
-    '/media/js/jquery.js',
-    '/media/js/jquery-ui.min.js',
-    '/media/ckeditor/ckeditor.js',
-    '/media/js/ckeditor.js',
+    '{0}js/jquery.js'.format(settings.STATIC_URL),
+    '{0}js/jquery-ui.min.js'.format(settings.STATIC_URL),
+    '{0}ckeditor/ckeditor.js'.format(settings.STATIC_URL),
+    '{0}js/ckeditor.js'.format(settings.STATIC_URL),
     )
 
 class PageAdmin (admin.ModelAdmin):

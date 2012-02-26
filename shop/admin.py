@@ -1,13 +1,12 @@
 #-*- coding: utf-8 -*-
 from django.contrib import admin
-from django.contrib.contenttypes.models import ContentType
 from django.db.models.aggregates import Max
 from django.http import HttpResponse
 from models import *
 
 js_admin  = (
-    '/media/ckeditor/ckeditor.js',
-    '/media/js/ckeditor.js',
+    '{0}ckeditor/ckeditor.js'.format(settings.STATIC_URL),
+    '{0}js/ckeditor.js'.format(settings.STATIC_URL),
     )
 
 class OrderProductInline(admin.TabularInline):
