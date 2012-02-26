@@ -68,33 +68,35 @@ USE_L10N = True
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 
 PROJECT_DIR = os.path.dirname(__file__)
-MEDIA_ROOT = PROJECT_DIR + '/media/'
-UPLOAD_DIR = PROJECT_DIR + '/media/uploads/'
 
 
-TMP_DIR_ADMIN = '/usr/local/lib/python2.6/dist-packages/django/contrib/admin/media/'
-
-TMP_DIR_FILEMANAGER = '%s/filemanager/templates/' % PROJECT_DIR
+#TMP_DIR_ADMIN = '/usr/local/lib/python2.6/dist-packages/django/contrib/admin/media/'
 
 
-if LOCAL_SRV:
-    TMP_DIR_ADMIN = '/Library/Python/2.6/site-packages/django/contrib/admin/media/'
+
+#if LOCAL_SRV:
+#    TMP_DIR_ADMIN = '/Library/Python/2.6/site-packages/django/contrib/admin/media/'
 
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-ADMIN_MEDIA_PREFIX = '/media_admin/'
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+STATIC_ROOT = PROJECT_DIR + STATIC_URL
+MEDIA_ROOT = PROJECT_DIR + MEDIA_URL
+UPLOAD_DIR = MEDIA_ROOT + 'uploads/'
+TMP_DIR_FILEMANAGER = '%s/filemanager/templates/' % PROJECT_DIR
 
 # Additional locations of static files
-STATICFILES_DIRS = (TMP_DIR_ADMIN,
+STATICFILES_DIRS = (
+    'templates/static',
+#    TMP_DIR_ADMIN,
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -115,13 +117,13 @@ TEMPLATE_LOADERS = (
 #     'django.template.loaders.eggs.Loader',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE_CLASSES = [
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-)
+]
 
 ROOT_URLCONF = 'urls'
 
@@ -133,9 +135,11 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
 )
 
-TEMPLATE_CONTEXT_PROCESSORS = (
+TEMPLATE_CONTEXT_PROCESSORS = [
     'django.contrib.messages.context_processors.messages',
-    'django.contrib.auth.context_processors.auth')
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.static',
+]
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
@@ -145,7 +149,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
 #    'django.contrib.sites',
     'django.contrib.messages',
-#    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',
     'django.contrib.admin',
     'supercaptcha',
     'filemanager',

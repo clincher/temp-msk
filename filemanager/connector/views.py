@@ -82,8 +82,8 @@ def getInfo(request, request_path):
         thefile = {
             'Path' : request_path + "/",
             'Filename' : split_path(path)[-1],
-            'File Type' : split_path(path)[1],
-            'Preview' : '/media/filemanager/images/fileicons/_Open.png',
+            'File Type' : 'Directory',
+            'Preview' : '{0}filemanager/images/fileicons/_Open.png'.format(settings.STATIC_URL),
             'Properties' : {
                     'Date Created' : '',
                     'Date Modified' : '',
@@ -95,10 +95,10 @@ def getInfo(request, request_path):
             'Error' : '',
             'Code' : 0
         }
-        thefile['File Type'] = 'Directory'
+#        thefile['File Type'] = 'Directory'
     else:
         ext = split_ext(path)
-        preview = '/media/filemanager/images/fileicons/'+ ext[1][1:] + '.png'
+        preview = '{0}filemanager/images/fileicons/{1}.png'.format(settings.STATIC_URL, ext[1][1:])
         thefile = {
             'Path' : request_path,
             'Filename' : split_path(path)[-1],
@@ -123,7 +123,7 @@ def getInfo(request, request_path):
                 thefile['Properties']['Height'] = ysize
                 thefile['Preview'] = "../../.." + request_path
             except:
-                preview = '/media/filemanager/images/fileicons/'+ ext[1][1:] + '.png'
+                preview = '{0}filemanager/images/fileicons/{1}.png'.format(settings.STATIC_URL, ext[1][1:])
                 thefile['Preview'] = preview
 
         thefile['File Type'] = os.path.splitext(path)[1][1:]
@@ -153,7 +153,7 @@ def handle_uploaded_file(request, f):
 def handler(request):
     if request.method == "POST":
         try:
-            result = handle_uploaded_file(request, request.FILES["newfile"])     
+            result = handle_uploaded_file(request, request.FILES["newfile"])
             return HttpResponse('<textarea>' + encode_json(result) + '</textarea>')
         except:
             type, value, tb = sys.exc_info()

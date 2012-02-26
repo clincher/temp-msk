@@ -1,7 +1,7 @@
 {% extends "base/main.html" %}
 {% block main_content %}
-<script type="text/javascript" src="/media/js/NFLightBox.js"></script>
-<link rel="stylesheet" type="text/css" href="/media/css/nf.lightbox.css"/>
+<script type="text/javascript" src="{{ STATIC_URL }}js/NFLightBox.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/nf.lightbox.css"/>
 	<div id="calc-result"></div><br/><br/>
 	<form id="services-form">
 	{% for s in services %}

@@ -6,17 +6,17 @@
     <meta name="description" content="{% if p.meta_description %}{{ p.meta_description|striptags }}.{% else %}ООО &quot;Темп&quot;{% if p.title %} - {{ p.title }}{% endif %}{% endif %}">
     <meta name="keywords" content="{% if p.meta_keywords %}{{ p.meta_keywords }}{% else %}{{ p.title }}, {{ p.title|lower }}{% endif %}">
 
-    <link rel="stylesheet" type="text/css" href="/media/css/jquery-ui.css" />
-    <link rel="stylesheet" type="text/css" href="/media/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/media/css/nf.lightbox.css" />
-    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/media/css/ie7.css" /><![endif]-->
-    <script type="text/javascript" src="/media/js/jquery.js"></script>
-    <script type="text/javascript" src="/media/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/media/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="/media/js/jquery.form.js"></script>
-    <script type="text/javascript" src="/media/js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="/media/js/NFLightBox.js"></script>
-    <script type="text/javascript" src="/media/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/nf.lightbox.css" />
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/ie7.css" /><![endif]-->
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.form.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/NFLightBox.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/script.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -99,7 +99,7 @@
 </div> <!-- wrapper -->
 <div id="dialog"></div>
 <div class="ui-widget-overlay" id="overlay">
-    <img src="/media/images/ajax-loader.gif">
+    <img src="{{ STATIC_URL }}images/ajax-loader.gif">
 </div>
 </body>
 </html>

@@ -1,9 +1,9 @@
-		<link rel="stylesheet" type="text/css" href="/media/filemanager/styles/reset.css" />
-		<link rel="stylesheet" type="text/css" href="/media/filemanager/scripts/jquery.filetree/jqueryFileTree.css" />
-		<link rel="stylesheet" type="text/css" href="/media/filemanager/scripts/jquery.contextmenu/jquery.contextMenu.css" />
-		<link rel="stylesheet" type="text/css" href="/media/filemanager/styles/filemanager.css" />
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}filemanager/styles/reset.css" />
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}filemanager/scripts/jquery.filetree/jqueryFileTree.css" />
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}filemanager/scripts/jquery.contextmenu/jquery.contextMenu.css" />
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}filemanager/styles/filemanager.css" />
 		<!--[if IE]>
-		<link rel="stylesheet" type="text/css" href="/media/filemanager/styles/ie.css" />
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}filemanager/styles/ie.css" />
 		<![endif]-->
 <form id="uploader" method="post">{% csrf_token %}
 	<h1></h1>
@@ -28,12 +28,12 @@
 	<li class="delete separator"><a href="#delete">Удалить</a></li>
 </ul>
 
-<script type="text/javascript" src="/media/filemanager/scripts/jquery-1.2.6.min.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/jquery.form.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/jquery.splitter/jquery.splitter.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/jquery.filetree/jqueryFileTree.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/jquery.contextmenu/jquery.contextMenu.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/jquery.impromptu-1.5.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/jquery.tablesorter.min.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/filemanager.config.js"></script>
-<script type="text/javascript" src="/media/filemanager/scripts/filemanager.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/jquery.form.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/jquery.splitter/jquery.splitter.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/jquery.filetree/jqueryFileTree.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/jquery.contextmenu/jquery.contextMenu.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/jquery.impromptu-1.5.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/filemanager.config.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}filemanager/scripts/filemanager.js"></script>
