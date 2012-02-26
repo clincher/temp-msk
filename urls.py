@@ -37,10 +37,7 @@ urlpatterns = patterns('',
     url(r'^sitemap.html$', 'page.views.sitemap', name='sitemap'),
     url(r'^(?P<url>[-\w]+).html$', 'page.views.page', name='page_link'),
 #    (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
-#    (r'^robots.txt$', 'django.views.static.serve', {'path':"robots.txt",'document_root': settings.MEDIA_ROOT,'show_indexes': False }),
-#    (r'^favicon.ico$', 'django.views.static.serve', {'path':"images/favicon.ico",'document_root': settings.MEDIA_ROOT,'show_indexes': False }),
     url(r'^captcha/(?P<code>[\da-f]{32})/$', 'supercaptcha.views.draw'),
-#   
 )
 
 if settings.DEBUG:
