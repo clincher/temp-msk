@@ -8,13 +8,9 @@ from local_settings import *
 
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-     ('Vasiliy', 'va.bolshakov@gmail.com'),
-)
+ADMINS = [('Vasiliy', 'va.bolshakov@gmail.com'),]
 
-MANAGERS = ADMINS
-
-
+MANAGERS = ADMINS + [('Sokolov', 'temp7_7@mail.ru'),]
 
 DATABASES = {
     'default': {

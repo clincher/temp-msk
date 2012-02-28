@@ -49,7 +49,10 @@ def navigation(group):
 navigation = register.inclusion_tag('blocks/navigation.html')(navigation)
 
 def productlist(group):
-    return {"products": group.group_products.all(), "group": group}
+    result = {"group": group, "products": []}
+    if group.pk:
+        result["products"] = group.group_products.all()
+    return result
 productlist = register.inclusion_tag('shop/product-list.html')(productlist)
 
 
