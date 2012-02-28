@@ -54,6 +54,7 @@ class ProductAdmin(admin.ModelAdmin):
             productgroup.products_count = productgroup.products_count - 1
             productgroup.save()
             productgroup = productgroup.productgroup
+        obj.delete()
 
 class ProductGroupAdmin(admin.ModelAdmin):
     class Media:
