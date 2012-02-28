@@ -95,7 +95,8 @@ def message(request):
                 msg=form.save(commit=False)
                 msg.save()
                 message = render_to_string('message_email.txt', {'msg':msg})
-                email = EmailMessage(u"Сообщение с сайта", message, 'AsiaCG <site@url.ru>', to=['2928539@gmail.com'])
+                send_to = [manager[1] for manager in settings.MANAGERS]
+                email = EmailMessage(u"Сообщение с сайта temp-msk", message, u'ТЕМП <no-reply@temp-msk.ru>', send_to)
                 email.send()
                 messages.success(request, u'Сообщение отправлено специалистам компании')
                 return {'form': MessageForm()}
