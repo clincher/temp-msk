@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, redirect
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
 from django.contrib import messages
+from django.conf import settings
 
 from page.views import render_to
 from models import Product, OrderCount, Order, ProductGroup
@@ -59,7 +60,8 @@ def order(request):
                     total += oc.summ
                     ocs.append(oc)
                 message = render_to_string('order_email.txt', {"products": ocs, "order": order, "total": total})
-                email = EmailMessage(u'Заказ на сайте', message, 'temp <robot@url.url>', to=['2928539@gmail.com'])
+                send_to = [manager[1] for manager in settings.MANAGERS]
+                email = EmailMessage(u'Заказ на сайте', message, 'temp <robot@temp-msk.ru>', to=send_to)
                 email.send()
                 messages.success(request, u'Ваша заявка отправлена специалистам компании.')
                 response.delete_cookie("order")
