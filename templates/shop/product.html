@@ -42,7 +42,7 @@
         <div id="product-gallery" class="gallery">
             <ul>
             {% for photo in product_images %}
-                <li><a title="{{photo.title}}" href="{{photo.image.url_300x300}}"><img src="{{photo.image.url_150x150}}" alt="хуйня"></a></li>
+                <li><a title="{{photo.title}}" href="{{photo.image.url_300x300}}"><img src="{{photo.image.url_150x150}}" alt="{{ photo.image.title }}"></a></li>
             {% endfor %}
             </ul>
         </div>{% endif %}
