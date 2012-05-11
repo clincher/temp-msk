@@ -2,4 +2,5 @@
     {% for link in links %}
     <li><a href="{% url page_link link.page.url %}" title="{{link.page.title}}">{{link.page.menu_title}}<span></span></a></li>
     {% endfor %}
+    <li><a href="/news">Новости</a></li>
 </ul> <!-- nav -->
