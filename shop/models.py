@@ -55,7 +55,7 @@ class Product(models.Model):
     description = models.TextField(u'Описание товара', blank=True)
     price = models.FloatField(u'Стоимость', default=0.0, help_text=u'Разделитель десятичной дроби - точка (.)')
     unit = models.ForeignKey(Unit, related_name="unit_products")
-    load = models.IntegerField(u"Загрузка", null=True, blank=True)
+    load = models.IntegerField(u"Загрузка", default=1)
     position = models.IntegerField(u"Позиция в списке")
     keywords = models.CharField(u'Ключевые слова в метатеге', max_length=255, null=True, blank=True)
     meta_description = models.CharField(u'Метатег "description"', max_length=255, null=True, blank=True)
