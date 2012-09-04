@@ -1,4 +1,4 @@
-{% extends "home.html" %}{% load menues %}
+{% extends "home.html" %}{% load menues adminmedia %}
 {% block left_menu %}
 {% left_menu %}
 {% endblock %}
@@ -36,10 +36,10 @@
                 <td>
                     <input type="text" name="product_{{product.pk}}" id="product_{{product.pk}}" class="add_to_cart_num" value="0" />
                     <label>
-                        <input type="image" id="add_to_cart_{{product.pk}}" class="add_to_cart" src="/media_admin/img/admin/icon_changelink.gif" product_id="{{product.pk}}" load="{{product.load}}" price="{{product.price}}" />
+                        <input type="image" id="add_to_cart_{{product.pk}}" class="add_to_cart" src="{% admin_media_prefix %}img/admin/icon_changelink.gif" product_id="{{product.pk}}" load="{{product.load}}" price="{{product.price}}" />
                     </label>
                     <label>
-                        <input type="image" src="/media_admin/img/admin/icon_deletelink.gif" class="delete_from_cart" product_id="{{product.pk}}" />
+                        <input type="image" src="{% admin_media_prefix %}img/admin/icon_deletelink.gif" class="delete_from_cart" product_id="{{product.pk}}" />
                     </label><br>
                     <div class="order-item-summ">
                         Сумма: <span id="order-summ-{{product.pk}}">0</span>
